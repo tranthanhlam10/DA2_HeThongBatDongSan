@@ -1,0 +1,92 @@
+.re-info-container {
+  font-weight: 500;
+  font-size: 16px;
+  font-family: Roboto, "Helvetica Neue";
+}
+.re-info-box {
+  border-radius: 10px;
+  background-color: #fff;
+  margin-bottom: 24px;
+}
+.re-detail-container {
+  padding: 24px;
+}
+.re-detail-name-des {
+  border-bottom: 1px solid #000;
+  padding-bottom: 24px;
+}
+.re-detail-title-box {
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.re-detail-title {
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+.re-detail-list {
+  display: flex;
+  align-items: center;
+  padding: 24px 0;
+}
+.re-detail-row {
+  display: flex;
+  flex-direction: column;
+}
+.re-detail-col-first > li {
+  margin-right: 50px;
+}
+.re-detail-col-second > li {
+  margin-right: 80px;
+}
+
+.re-detail-icon {
+  margin-right: 8px;
+}
+.re-detail-icon::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: red;
+}
+.re-detail-row > li {
+  display: flex;
+}
+.re-detail-room {
+  display: flex;
+}
+.re-detail-room > div {
+  display: flex;
+}
+.re-detail-bedroom {
+  margin-right: 305px;
+}
+.re-detail-row-title {
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+.re-view-more {
+  color: #a18474;
+  display: flex;
+}
+.re-view-more-content {
+  margin: 0 auto;
+  display: flex;
+  cursor: pointer;
+}
+.share-or-save > button {
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 30px;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.share-icon > button:hover {
+  color: #fff;
+  background: #0572e6;
+}
+.save-icon > button:hover {
+  color: #fff;
+  background: red;
+}

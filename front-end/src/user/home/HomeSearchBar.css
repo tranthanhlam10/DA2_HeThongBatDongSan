@@ -1,0 +1,141 @@
+.search-banner {
+  position: relative;
+  height: 500px;
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+.search-tab-form {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  flex: 0 0 50%;
+  transform: translateY(-50%);
+}
+
+.search-tab {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+/*CSS cho list tab nhà đất*/
+
+/*CSS cho form Search(Không bao gồm 2 tab*/
+.search-form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  width: 100%;
+}
+/*CSS cho tab buying*/
+.search-tab-buying {
+  background-color: rgba(0,0,0,.6);
+  border-radius: 5px 5px 0px 0px;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-right: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+/*CSS tab rent*/
+.search-tab-rent {
+  background-color: rgba(255,255,255,.6);
+  border-radius: 5px 5px 0px 0px;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-right: 5px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+/*CSS cho nguyen thanh tìm kiếm*/
+.searching-bar {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 4px;
+  background: #fff;
+  color: #3f3424;
+}
+/*CSS cho box loại bất động sản*/
+.option-box {
+  line-height: inherit;
+  padding: 0 15px;
+  overflow: hidden;
+  float: left;
+  max-width: 95%;
+  text-overflow: ellipsis;
+  white-space: nowrap !important;
+  vertical-align: middle;
+}
+/*CSS cho thanh input*/
+.search-input {
+  flex: 1;
+  line-height: inherit;
+  height: inherit;
+  padding: 0 15px;
+  position: relative;
+}
+/*CSS cho nút tìm kím trong thanh seacrh*/
+.button-search {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  font-size: 15px;
+  border-right: inherit;
+  border-radius: 4px;
+  line-height: inherit;
+  color: #fff;
+  background: #cfa267;
+  cursor: pointer;
+}
+.button-search:hover {
+  background: rgba(207,162,103,.8);
+}
+
+/*CSS cho nút các nút tùy chọn*/
+.searching-option {
+  line-height: inherit;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 45px;
+  line-height: 45px;
+  margin-top: 10px;
+  color: white;
+}
+.home-searchbar-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: inherit;
+  height: 40px;
+  cursor: pointer;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  width: 20%;
+  padding: 0 5px;
+  margin-right: 10px;
+}

@@ -1,0 +1,26 @@
+.filter-container{
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+.filter-title{
+    border-bottom: 1px solid #dedede;
+}
+.filter-title > h1{
+    color: #cfa267;
+    font-size: 17px;
+    padding: 8px 15px;
+}
+.filter-list{
+    padding: 8px 15px;
+}
+.filter-item{
+    padding: 10px 15px;
+    color: #3f3424;
+    font-size: 14px;
+    cursor: pointer;
+}
+.filter-item:hover {
+    transform: translateX(15px);
+    color: var(--main-color);
+}

@@ -1,0 +1,25 @@
+.hot-real-estate-container{
+    background: #fff;
+    margin-bottom: 20px;
+}
+.hot-real-estate-title{
+    border-bottom: 1px solid #dedede;
+}
+.hot-real-estate-title > h1{
+    color: #cfa267;
+    font-size: 17px;
+    padding: 8px 20px;
+}
+.hot-real-estate-list{
+    padding: 8px 20px;
+}
+.hot-real-estate-item{
+    padding: 10px 15px;
+    color: #3f3424;
+    font-size: 15px;
+    font-weight: 500;
+}
+.hot-real-estate-item:hover {
+    color: #cfa267;
+    transform: translateX(15px);
+}

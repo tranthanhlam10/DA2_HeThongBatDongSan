@@ -1,0 +1,141 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-weight: 600;
+}
+
+.navbar-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 4px 230px;
+  background: #cfa267;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+/*CSS này của là của com đăng nhập đăng kí*/
+.info-left {
+  display: flex;
+  margin: 0px 8px 0px 8px;
+  color: black;
+  align-items: center;
+  list-style-type: none;
+  color: #fff;
+}
+.info-left-first {
+  border-right: 1px solid #fff;
+  margin-right: 20px;
+}
+.info-left  > li{
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+}
+.info-left-icon{
+  margin-right: 10px;
+  font-size: 18px;
+}
+.info-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-col {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0 230px;
+
+}
+.logo-container {
+  margin-right: 15px;
+}
+
+.header-col > li {
+  padding: 0 12px;
+  font-size: 15px;
+  cursor: pointer;
+  position: relative;
+}
+.navbar-hover-list {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  border-radius: 5px;
+  width: 240px;
+  box-shadow: 0px 8px 20px rgb(182 182 182 / 30%);
+  background: #fff;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition-delay: 0.45s;
+  z-index: 999;
+  min-width: 300px;
+}
+.navbar-link {
+  height: 64px;
+  display: flex;
+  align-items: center;
+}
+.header-col > li:hover .navbar-hover-list {
+  height: auto;
+  opacity: 1;
+}
+.navbar-hover-item {
+  text-transform: uppercase;
+  padding: 15px 10px 10px 20px;
+  color: #000;
+  font-weight: 500;
+  font-size: 13px;
+}
+.navbar-hover-item:hover {
+  transform: translateX(15px);
+  color: #cfa267;
+}
+/* .navbar-hover-list > li:hover {
+  background: var(--main-color);
+  color: #fff;
+} */
+
+.header-line-hover {
+  height: 2px;
+  width: 0;
+  background: var(--main-color);
+  transition: all 0.4s ease-in-out;
+}
+
+.header-navbar:hover .header-line-hover {
+  width: 100%;
+}
+
+/*CSS cho nút đăng nhập*/
+.navbar-link {
+  height: 64px;
+  display: flex;
+  align-items: center;
+}
+/*CSS cho nút đăng tin*/
+.navbar-createFeed {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background-color: #ef5350;
+  border-radius: 10px;
+  padding: 0px 8px 0px 8px;
+  margin-left: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.navbar-createFeed:hover {
+  background-color: red;
+}
+.login-btn{
+  border-right: 1px solid #fff;
+  padding-right: 20px;
+  margin-right: 20px;
+}

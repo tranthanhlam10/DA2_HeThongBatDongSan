@@ -1,0 +1,28 @@
+.near-container{
+    background: #fff;
+    margin-bottom: 20px;
+}
+.near-title{
+    border-bottom: 1px solid #dedede;
+}
+.near-title > h1{
+    color: #cfa267;
+    font-size: 17px;
+    padding: 8px 20px;
+}
+.near-list{
+    padding: 8px 20px;
+}
+.near-item{
+    padding: 10px 15px;
+    color: #3f3424;
+    font-size: 15px;
+    font-weight: 500;
+}
+.near-item:hover {
+    transform: translateX(15px);
+}
+.near-item > a >span{
+    margin-left: 5px;
+    color: #cfa267;
+}

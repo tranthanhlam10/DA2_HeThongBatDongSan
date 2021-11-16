@@ -1,0 +1,25 @@
+.hot-location-container{
+    background: #fff;
+    margin-bottom: 20px;
+}
+.hot-location-title > h1{
+    color: #cfa267;
+    font-size: 17px;
+    padding: 8px 15px;
+}
+.hot-location-list{
+    padding: 8px 15px;
+}
+.hot-location-item{
+    padding: 15px 15px;
+    color: #3f3424;
+    font-size: 15px;
+    border-top: 1px solid #dedede;
+}
+.hot-location-item:hover {
+    transform: translateX(10px);
+}
+.hot-location-item > a >span{
+    margin-left: 5px;
+    color: #cfa267;
+}

@@ -1,0 +1,49 @@
+.owl-container {
+  border-radius: 10px;
+  background: #fff;
+  margin-bottom: 24px;
+  width: 100%;
+}
+.owl-title {
+  padding: 24px;
+  font-weight: 500;
+  font-size: 16;
+}
+.item-hot {
+  display: flex;
+  height: 100%;
+}
+
+.owl-stage-outer {
+  padding-left: 24px;
+  padding-bottom: 81px;
+  position: relative;
+}
+.owl-item {
+  display: flex;
+  align-self: stretch;
+}
+.owl-stage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.re-nav-container {
+  position: absolute;
+  top: calc(100% - 56px);
+  left: 24px;
+}
+.re-prev-owl,
+.re-next-owl {
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+  margin-right: 12px;
+  background: #fff;
+  border: 1px solid #a18474;
+  cursor: pointer;
+}
+
+.navClass {
+  position: absolute;
+}

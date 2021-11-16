@@ -1,0 +1,15 @@
+.real-estate-container {
+  background: #dedede;
+}
+
+.real-estate-main {
+  width: var(--container-width);
+  margin: auto;
+  padding: 24px 0;
+  display: flex;
+  overflow: hidden;
+}
+.real-estate-info {
+  margin-right: 24px;
+  width: 70%;
+}

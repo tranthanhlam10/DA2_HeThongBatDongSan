@@ -1,0 +1,28 @@
+.real-estate-ads-container {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 15px;
+}
+.re-ads-title {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 15px;
+}
+
+.re-ads-product {
+  display: flex;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  padding-left: 15px;
+}
+
+.ads-item {
+  flex: 0 0 calc(100% / 4);
+  padding: 0 7.5 px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 15px;
+  display: flex;
+  align-self: stretch;
+}

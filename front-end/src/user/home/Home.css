@@ -1,0 +1,49 @@
+/*CSS cho 2 tab nhà đất*/
+.home-content {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.home-container-center{
+  width: var(--container-width);
+  margin: auto;
+  padding: 48px 0 24px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Asap-Medium", sans-serif;
+  font-size: 21px;
+  padding-bottom: 15px;
+  margin-top: 15px;
+}
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 15 px;
+}
+
+.more-product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+.button-more-product {
+  font-size: 20px;
+  background: #ef5350;
+  border-radius: 10px;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.material-icons {
+  padding-top: 3px;
+}

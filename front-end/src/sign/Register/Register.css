@@ -1,0 +1,90 @@
+.register-container{
+    background-image: url("")
+}
+
+.register-center{
+    width: 1200px;
+    margin:5rem auto;
+    height: 700px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    border-radius: 10px;
+  
+}
+
+.register-col1{
+    width: 50%;
+    float: left;
+    display: block;
+    height: 700px;
+    background: #2d88ff;
+}
+.register-col2{
+    width: 50%;
+    float: left;
+}
+.register-col2-info{
+    padding: 50px;
+}
+.register-col1-info{
+    padding: 50px;
+    color: #fff;
+  
+}
+.register-col1-title{
+   
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.register-col1-content{
+ 
+}
+.register-col2-title{
+    color: #2d88ff;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+#name,#lastname,#pw,#confirm-pw{
+    border: 1px solid #ccc;
+    width: 240px;
+    padding: 15px 10px;
+    outline: none;
+}
+#email{
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 15px 10px;
+    outline: none;
+}
+.name-input{
+    margin-right: 15px;
+}
+label,input{
+    display: block;
+}
+.name-input>label,.fullname-input>label,.pw-input>label,.confirm-pw-input>label,.email-input>label{
+    margin-bottom: 10px;
+}
+.full-name-container,.pw-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.email-container{
+    margin-bottom:30px;
+}
+.register-agree{
+    display: flex;
+    align-items: center;
+}
+.register-agree > input{
+    margin-right: 10px;
+}
+.register-agree > span{
+    text-decoration: underline;
+    color: #2d88ff;
+    margin-left: 5px;
+}

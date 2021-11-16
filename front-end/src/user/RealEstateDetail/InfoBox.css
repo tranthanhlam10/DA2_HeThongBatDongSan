@@ -1,0 +1,60 @@
+.info-box-container{
+    border-radius: 8px;
+    background: #fff;
+    margin-bottom: 24px;
+}
+.info-box{
+    text-align: center;
+    padding: 10px 20px;
+}
+.owner-name{
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.owner-avatar{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.owner-phone{
+    width: 100%;
+    padding: 10px 20px;
+    background: #A18474;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid #A18474
+}
+
+.owner-email{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    border: 1px solid #A18474;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+.owner-email:hover {
+    color: #2c2c2c;
+    background: #f2f2f2;
+}
+.owner-address{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    border: 1px solid #A18474;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+.owner-address:hover {
+    color: #635353;
+    background: #f2f2f2;
+}

@@ -1,0 +1,88 @@
+.ads-card-info-container {
+  width: 235px;
+  box-shadow: 0px 16px 30px rgba(0, 0, 0, 0.15);
+  background: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-self: stretch;
+}
+.ads-card-img {
+  height: 200px;
+  width: 100%;
+}
+.ads-card-img > img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.ads-card-info {
+  padding: 12px 16px 13px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ads-price-area {
+  display: flex;
+  border-bottom: 1px dashed black;
+  padding-bottom: 5px;
+}
+.ads-card-title {
+  color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.ads-card-title-icon-container {
+  display: flex;
+}
+.ads-card-icon-heart,
+.ads-card-icon-share {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  border-radius: 50%;
+  background: #a1847433;
+  width: 24px;
+}
+.ads-card-icon-heart {
+  margin-right: 16px;
+}
+
+.ads-hot-card-price {
+  margin-top: 12px;
+  display: flex;
+}
+.ads-card-price {
+  font-weight: 500;
+  font-size: 14px;
+}
+.ads-hot-card-address {
+  margin-top: 12px;
+  display: flex;
+}
+.ads-card-address {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.ads-hot-card-area {
+  margin-top: 12px;
+  display: flex;
+}
+.ads-card-area {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.ads-hot-card-time {
+  margin-top: 12px;
+  display: flex;
+}
+.ads-card-time {
+  font-size: 14px;
+  font-weight: 500;
+}
