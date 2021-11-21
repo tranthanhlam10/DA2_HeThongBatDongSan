@@ -72,6 +72,7 @@
   margin: 0 auto;
   display: flex;
   cursor: pointer;
+  align-items: center;
 }
 .share-or-save > button {
   padding: 10px 12px;

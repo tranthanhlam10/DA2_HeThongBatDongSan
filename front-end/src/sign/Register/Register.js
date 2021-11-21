@@ -54,6 +54,9 @@ export default function Register() {
                             <input id="tac" type="checkbox" name="terms-and-conditions" />
                             I agree to the <span> Terms and Conditions</span>
                         </label>
+                        <button className="register-button">
+                            Register
+                        </button>
                     </div>
                 </div>
             </div>

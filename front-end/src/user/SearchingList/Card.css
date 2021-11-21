@@ -8,6 +8,11 @@
     height: 184px;
     position: relative;
 }
+.img-item > a > img {
+    width: 278px;
+    height: 181px;
+    object-fit: cover;
+}
 #favorite{
     position: absolute;
     bottom: 10px;

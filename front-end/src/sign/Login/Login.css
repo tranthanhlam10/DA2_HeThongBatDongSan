@@ -164,3 +164,10 @@
     margin-right: 5px;
   }
   
+
+  .error{
+    display: flex;
+    justify-content:flex-start;
+    font-size: 13px;
+    color: red;
+  }

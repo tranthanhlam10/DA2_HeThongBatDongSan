@@ -1,14 +1,14 @@
 import React from 'react'
 import './Card.css'
-
+import { Link } from 'react-router-dom'
 export default function Card(props) {
-    const { image, name, time, price, area, location } = props;
+    const { image, name, time, price, area, location, link } = props;
     return (
         <div className="card-container">
             <div className="img-item">
-                <a href="#">
+                <Link to={link}>
                     <img src={image}></img>
-                </a>
+                </Link>
                 <button id="favorite">
                     <div className="favorite-content">
                         <span className="favorite-name">
@@ -24,9 +24,9 @@ export default function Card(props) {
             <div className="content-item">
                 {/* //tryền data tên vô đây */}
                 <div className="card-title">
-                    <a href="#">
+                    <Link to={link}>
                         {name}
-                    </a>
+                    </Link>
                 </div>
                 <div className="card-time">
                     <span className="material-icons">

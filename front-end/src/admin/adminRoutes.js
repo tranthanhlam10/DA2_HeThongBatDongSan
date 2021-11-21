@@ -1,40 +1,54 @@
 import React from "react";
-import ManagerStatistic from "./ManagerStatistic/ManagerStatistic";
+
 import ProjectDetail from "./ProjectDetail/ProjectDetail";
-import ProjectManagement from "./ProjectManagement/ProjectManagement";
-import UserDetail from "./UserDetail/UserDetail";
+import ManagerStatistic from "./ManagerStatistic/ManagerStatistic";
 import RealEstateManagement from "./RealEstateManagement/RealEstateManagement";
+import ProjectManagement from "./ProjectManagement/ProjectManagement";
 import UserManagement from "./UserManagement/UserManagement";
+import RealEstateDetail from "./RealEstateDetail/RealEstateDetail";
+import UserDetail from "./UserDetail/UserDetail";
 const adminRoutes = [
   {
-    pathadmin: "managestatistic",
+    path: "",
     exact: true,
-    mainadmin: () => <ManagerStatistic />,
+    main: () => <ProjectManagement />, //http://localhost:3000/admin
   },
   {
-    pathadmin: "projectdetail",
-    exact: false,
-    mainadmin: () => <ProjectDetail />,
+    path: "/abc",
+    exact: true,
+    main: () => <ManagerStatistic />, //http://localhost:3000/admin/abc
+  },
+
+  {
+    path: "/realestatemanagement",
+    exact: true,
+    main: () => <RealEstateManagement />,
   },
   {
-    pathadmin: "projectmanagement",
-    exact: false,
-    mainadmin: () => <ProjectManagement />,
+    path: "/projectmanagement",
+    exact: true,
+    main: () => <ProjectManagement />,
+  },
+
+  {
+    path: "/usermanagement",
+    exact: true,
+    main: () => <UserManagement />,
   },
   {
-    pathadmin: "realestatemanagement",
-    exact: false,
-    mainadmin: () => <RealEstateManagement />,
+    path: "/projectdetail",
+    exact: true,
+    main: () => <ProjectDetail />,
   },
   {
-    pathadmin: "userdetail",
-    exact: false,
-    mainadmin: () => <UserDetail />,
+    path: "/realestatedetail",
+    exact: true,
+    main: () => <RealEstateDetail />,
   },
   {
-    pathadmin: "usermanagement",
-    exact: false,
-    mainadmin: () => <UserManagement />,
+    path: "/userdetail",
+    exact: true,
+    main: () => <UserDetail />,
   },
 ];
 

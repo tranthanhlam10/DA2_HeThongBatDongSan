@@ -4,14 +4,14 @@
   padding: 3rem;
 } */
 
-.admin-pd-content {
+.admin-red-content {
   flex: 1;
   text-align: center;
 }
-.admin-pd-header {
+.admin-red-header {
   margin-bottom: 1rem;
 }
-.admin-pd-content-detail {
+.admin-red-content-detail {
   display: flex;
   align-self: stretch;
   flex-direction: column;
@@ -21,7 +21,7 @@
   border-radius: 5px;
   margin-left: 5px;
 }
-.admin-pd-detail {
+.admin-red-detail {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -34,7 +34,7 @@
 .infor {
   font-weight: bold;
 }
-.admin-pd-moreinfo {
+.admin-red-moreinfo {
   padding: 2rem;
 }
 
@@ -48,24 +48,34 @@
   margin: 3rem;
   justify-content: flex-end;
 }
-.btn--save-pd,
-.btn--delete-pd {
+.btn--refuse-red,
+.btn--accept-red,
+.btn--delete-red {
   border: none;
   padding: 1rem 2rem 1rem 2rem;
   margin-left: 2rem;
 }
-.btn--save-pd {
+.btn--accept-red {
   background-color: rgba(17, 231, 17, 0.479);
 }
-.btn--save-pd:hover {
+
+.btn--accept-red:hover {
   background-color: rgba(17, 231, 17, 0.685);
 
   cursor: pointer;
 }
-.btn--delete-pd {
+.btn--delete-red {
   background-color: rgba(255, 0, 0, 0.623);
 }
-.btn--delete-pd:hover {
+.btn--delete-red:hover {
   background-color: rgba(255, 0, 0, 0.712);
+  cursor: pointer;
+}
+
+.btn--refuse-red {
+  background-color: rgb(216, 144, 11);
+}
+.btn--refuse-red:hover {
+  background-color: rgb(216, 144, 11);
   cursor: pointer;
 }

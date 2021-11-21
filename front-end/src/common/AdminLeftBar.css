@@ -1,0 +1,65 @@
+/* Fixed sidenav, full height */
+.admin-left-bar {
+  width: 15%;
+  top: 0;
+  left: 0;
+  background-color: #cfa267;
+  overflow-x: hidden;
+  padding-top: 20px;
+  color: white;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+}
+
+.admin-option,
+.dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  justify-content: center;
+  color: white;
+}
+.lb-header {
+  font-size: 24px;
+}
+
+.lb-header > a {
+  display: flex;
+}
+.lb-realestate {
+  margin-top: 30px;
+}
+.dropdown-btn > a {
+  display: flex;
+  align-items: center;
+}
+.dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 200px;
+  font-size: 20px;
+  padding: 0px 10px;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: #cfa267;
+  padding-left: 8px;
+}
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}

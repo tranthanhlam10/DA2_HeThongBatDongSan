@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./HomeSearchBar.css";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import HomeOption from "./HomeOption";
+import loading1 from '../../assets/loading1.gif'
+import Loading from '../../common/Loading'
+
 const TypeHomeOption = [
   {
     type: "Hồ Chí Minh",
@@ -44,7 +47,29 @@ const ProjectHomeOption = [
   },
 ];
 
+
 export default function HomeSearchBar() {
+  const history = useHistory()
+  const [isLoading, setIsLoading] = useState(false)
+  const handleLoading = () => {
+    setIsLoading(true)
+    setTimeout(() => {
+      history.push('/searchinglist')
+    }, 3000)
+  }
+  const searchBtn = <button className="button-search" onClick={() => handleLoading()}>
+    <span className="material-icons">search</span>
+    <i className="icon-search"></i>
+    <span>Tìm kiếm</span>
+  </button>
+
+  const loading = <button className="button-search">
+    {<Loading />}
+  </button>
+
+
+
+
   return (
     <div className="search-banner">
       <iframe
@@ -75,11 +100,7 @@ export default function HomeSearchBar() {
               className="search-input"
               placeholder="Nhập địa điểm hoặc dự án"
             ></input>
-            <button className="button-search">
-              <span className="material-icons">search</span>
-              <i className="icon-search"></i>
-              <span>Tìm kiếm</span>
-            </button>
+            {isLoading ? loading : searchBtn}
           </div>
 
           <div className="searching-option">

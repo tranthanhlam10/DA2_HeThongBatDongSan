@@ -1,11 +1,11 @@
 .hot-card-info-container {
-  width: 235px;
+  width: 250px;
   box-shadow: 0px 16px 30px rgba(0, 0, 0, 0.15);
   background: #ffffff;
   border-radius: 10px;
   display: flex;
   align-self: stretch;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .hot-card-info-container:hover {
   transform: scale(1.03);
@@ -59,11 +59,11 @@
   display: flex;
   align-items: center;
 }
-.hot-card{
+.hot-card {
   font-weight: 500;
   font-size: 14px;
 }
 
-.con-hot-card > span{
+.con-hot-card > span {
   margin-right: 5px;
 }

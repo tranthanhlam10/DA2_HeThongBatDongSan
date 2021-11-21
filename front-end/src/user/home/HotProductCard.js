@@ -2,11 +2,12 @@ import React from "react";
 import "./HotProductCard.css";
 import heart1 from "../../assets/heart1.png";
 import share1 from "../../assets/share1.png";
+import {Link} from 'react-router-dom'
 export default function HotProductCard(props) {
-  const { price, name, address, juridical, areainfo, img } = props;
+  const { price, name, address, juridical, areainfo, img,link } = props;
   return (
     <div className="hot-card-info-container">
-      <a href="#" className="hot-card-info-link">
+      <Link to={link} className="hot-card-info-link">
         <div className="hot-card-img">
           <img src={img}></img>
         </div>
@@ -33,7 +34,7 @@ export default function HotProductCard(props) {
             </div>
           </div>
         </div>
-      </a>
+      </Link>
     </div>
   );
 }

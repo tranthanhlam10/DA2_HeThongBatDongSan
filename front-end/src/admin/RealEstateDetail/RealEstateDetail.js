@@ -1,16 +1,16 @@
 import React from "react";
-import "./ProjectDetail.css";
+import "./RealEstateDetail.css";
 import { Link } from "react-router-dom";
 
-export default function ProjectDetail() {
+export default function RealEstateDetail() {
   return (
-    <div className="admin-pd-content">
-      <h1 className="admin-pd-header">Chi tiết dự án</h1>
-      <div className="admin-pd-content-detail">
-        <div className="admin-pd-detail">
-          <div className="admin-pd-information">
-            <p classNames="infor">Tên dự án: Vinhomes</p>
-            <p className="infor">Chủ đầu tư: Đạt</p>
+    <div className="admin-red-content">
+      <h1 className="admin-red-header">Chi tiết nhà đất</h1>
+      <div className="admin-red-content-detail">
+        <div className="admin-red-detail">
+          <div className="admin-red-information">
+            <p className="infor">Tên nhà đất: Vinhomes</p>
+            <p className="infor">Giá: 15 tỷ VND</p>
             <p className="infor">Địa chỉ: Sài Gòn</p>
           </div>
           <img
@@ -20,8 +20,8 @@ export default function ProjectDetail() {
           ></img>
         </div>
 
-        <div className="admin-pd-moreinfo">
-          <p className="description">Thông tin mô tả:</p>
+        <div className="admin-red-moreinfo">
+          <p className="description">Thông tin khác:</p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
             laudantium eius labore molestias dolores debitis? Cum, veniam?
@@ -45,13 +45,12 @@ export default function ProjectDetail() {
             molestias dolores debitis? Cum, veniam? Exercitationem quam expedita
             corrupti qui, quasi excepturi iusto dolorum commodi nam cupiditate
             magni!Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Beatae, laudantium eius labore molestias dolores debitis? Cum,
-            veniam? Exercitationem quam expedita corrupti qui, quasi excepturi
-            iusto dolorum commodi nam cupiditate magni!
           </p>
+
           <div className="action">
-            <button className="btn--save-pd">Lưu</button>
-            <button className="btn--delete-pd">Xóa</button>
+            <button className="btn--accept-red">Duyệt</button>
+            <button className="btn--refuse-red">Từ Chối</button>
+            <button className="btn--delete-red">Xóa</button>
           </div>
         </div>
       </div>

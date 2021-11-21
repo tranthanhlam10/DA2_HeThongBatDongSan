@@ -22,6 +22,7 @@ const hotCardList = [
     juridical: "Sổ đỏ",
     areainfo: "2,500m2",
     img: anhdemo1,
+    link: '/realestate'
   },
   {
     price: "2,2 Tỷ/Căn",
@@ -30,6 +31,7 @@ const hotCardList = [
     juridical: "Sổ hồng",
     areainfo: "2,500m2",
     img: anhdemo2,
+    link: '/realestate'
   },
   {
     price: "1,4 Tỷ/Căn",
@@ -38,6 +40,7 @@ const hotCardList = [
     juridical: "Sổ đỏ",
     areainfo: "2,500m2",
     img: anhdemo3,
+    link: '/realestate'
   },
   {
     price: "1,8 Tỷ/Căn",
@@ -46,6 +49,7 @@ const hotCardList = [
     juridical: "Sở hữu lâu dài",
     areainfo: "2,500m2",
     img: anhdemo4,
+    link: '/realestate'
   },
   {
     price: "Đang cập nhật",
@@ -54,6 +58,7 @@ const hotCardList = [
     juridical: "Sổ đỏ",
     areainfo: "2,500m2",
     img: anhdemo5,
+    link: '/realestate'
   },
   {
     price: "50 triệu/m2",
@@ -62,6 +67,7 @@ const hotCardList = [
     juridical: "Sổ hồng",
     areainfo: "2,500m2",
     img: anhdemo6,
+    link: '/realestate'
   },
 ];
 const prevIcon = `<img src=${prev} />`;
@@ -93,6 +99,7 @@ export default function HomeCarouselOwl() {
                 juridical={reCard.juridical}
                 areainfo={reCard.areainfo}
                 img={reCard.img}
+                link = {reCard.link}
               />
             </div>
           );

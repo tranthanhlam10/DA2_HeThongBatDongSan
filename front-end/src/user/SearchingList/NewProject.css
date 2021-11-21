@@ -44,3 +44,9 @@
     font-size: 14px;
     font-weight: 400;
 }
+
+.new-project-img > a > img{
+    width: 100px;
+    height: 80px;
+    object-fit:cover;
+}

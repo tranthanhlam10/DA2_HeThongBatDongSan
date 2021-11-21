@@ -1,0 +1,86 @@
+/* .container {
+  display: flex;
+  align-items: center;
+  padding: 3rem;
+} */
+
+.admin-usd-content {
+  flex: 1;
+  text-align: center;
+}
+.admin-usd-header {
+  margin-bottom: 1rem;
+}
+.admin-usd-content-detail {
+  display: flex;
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+.admin-usd-detail {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3rem;
+}
+.infor:not(:last-child) {
+  padding-bottom: 2rem;
+}
+
+.infor {
+  font-weight: bold;
+}
+.admin-usd-moreinfo {
+  padding: 2rem;
+}
+
+.description {
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.re-description {
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+.action {
+  display: flex;
+  margin: 3rem;
+  justify-content: flex-end;
+}
+.btn--refuse-usd,
+.btn--accept-usd,
+.btn--delete-usd {
+  border: none;
+  padding: 1rem 2rem 1rem 2rem;
+  margin-left: 2rem;
+}
+.btn--accept-usd {
+  background-color: rgba(17, 231, 17, 0.479);
+}
+
+.btn--accept-usd:hover {
+  background-color: rgba(17, 231, 17, 0.685);
+
+  cursor: pointer;
+}
+.btn--delete-usd {
+  background-color: rgba(255, 0, 0, 0.623);
+}
+.btn--delete-usd:hover {
+  background-color: rgba(255, 0, 0, 0.712);
+  cursor: pointer;
+}
+
+/* .btn--refuse-usd {
+  background-color: rgb(216, 144, 11);
+}
+.btn--refuse-usd:hover {
+  background-color: rgb(216, 144, 11);
+  cursor: pointer;
+} */
