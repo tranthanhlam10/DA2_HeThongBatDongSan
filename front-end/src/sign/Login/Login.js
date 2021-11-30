@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import "./Login.css";
 import { Link, Redirect, useHistory } from "react-router-dom";
-import loading1 from '../../assets/loading1.gif'
+import Loading from '../../common/Loading'
+
+import ReactLoading from "react-loading";
+
 export default function Login() {
     const history = useHistory();
     const [email, setEmail] = useState();
@@ -10,6 +13,14 @@ export default function Login() {
     const [isValidPass, setIsValidPass] = useState(true);
     const [error, setError] = useState();
     const [isValid, setIsValid] = useState(false)
+    const [isLoading, setIsLoading] = useState(false)
+
+    const handleLoading = () => {
+        setIsLoading(true)
+        setTimeout(() => {
+            history.push('/')
+        }, 3000)
+    }
     const validate = (event) => {
         event.preventDefault()
 
@@ -33,16 +44,18 @@ export default function Login() {
                     }
                     else {
                         setIsValidPass(true);
-                        history.push('/')
+                        handleLoading();
                     }
                 }
             }
         }
     }
 
+    const loginBtn = <button onClick={validate}>Login</button>
 
-
-    const loadingIcon = `<img src=${loading1} />`;
+    const loading = <button className="login-loading-btn" >
+        <ReactLoading type="bubbles" color="#fff" />
+    </button>
     return (
         <div className="login-container">
             <div className="login-col1">
@@ -75,7 +88,7 @@ export default function Login() {
                                 </div>
                                 <a href="#">Forgot password?</a>
                             </div>
-                            <button onClick={validate}>{isValid ? loadingIcon : 'Login'}</button>
+                            {isLoading ? loading : loginBtn}
                             <p>
                                 <span>or Login with</span>
                             </p>

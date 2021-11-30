@@ -60,12 +60,10 @@ export default function AdminLeftbar() {
         </div>
       </div>
       <div className="lb-analytics">
-        <button className="dropdown-btn" onClick={Dropdown}>
-          <a>
-            <span className="material-icons">analytics</span>
-            <span>Thống kê</span>
-          </a>
-        </button>
+        <Link className="admin-analysis" to="/admin/managestatistic">
+          <span className="material-icons">analytics</span>
+          <span>Thống kê</span>
+        </Link>
       </div>
     </div>
   );

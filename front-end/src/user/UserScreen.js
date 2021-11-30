@@ -3,7 +3,7 @@ import Header from '../common/Header'
 import Footer from '../common/Footer'
 import './UserScreen.css'
 import userRoutes from './userRoutes';
-import { Switch, Route, useRouteMatch } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, useRouteMatch } from "react-router-dom";
 export default function UserScreen() {
   let { path } = useRouteMatch();
   const renderRoutes = userRoutes && userRoutes.map((route, index) => {
@@ -11,8 +11,11 @@ export default function UserScreen() {
   });
   return (
     <div>
-      <Header />
-      <Switch>{renderRoutes}</Switch>
-      <Footer />
+      <Router>
+        <Header />
+        <Switch>{renderRoutes}</Switch>
+        <Footer />
+      </Router>
+
     </div>);
 }

@@ -1,0 +1,161 @@
+/* phần này trở đi là css co cái pop up, lát tách nó ra*/
+.popup-header {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.popup-re-input-name {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.popup-re-input-address {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.area-type-re {
+  display: flex;
+  justify-content: space-between;
+}
+.popup-re-input-area {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.popup-re-input-type {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.price-orient-re {
+  display: flex;
+  justify-content: space-between;
+}
+.popup-re-input-price {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.popup-re-input-orientation {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.popup-re-input-acreage {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.floor-room-re {
+  display: flex;
+  justify-content: space-between;
+}
+.popup-re-input-floor {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.popup-re-input-room {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.popup-re-input-img {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.popup-re-input-sold {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.add-re-btn,
+.reload-re-btn {
+  border: none;
+  padding: 1rem 2rem 1rem 2rem;
+}
+.add-re-btn > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reload-re-btn > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-re-btn {
+  background-color: rgba(255, 255, 0, 0.575);
+  margin-right: 0.5rem;
+}
+.add-re-btn:hover {
+  background-color: rgba(255, 255, 0, 0.575);
+  cursor: pointer;
+}
+.reload-re-btn {
+  background-color: rgba(17, 231, 17, 0.479);
+}
+.reload-re-btn:hover {
+  background-color: rgba(17, 231, 17, 0.479);
+  cursor: pointer;
+}
+
+.add-reload-button {
+  display: flex;
+  margin-left: auto;
+  margin-top: 10px;
+}

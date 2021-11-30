@@ -9,7 +9,7 @@ export default function DetailCarousel() {
     return (
         <Carousel>
             <div>
-                <img src="https://lh3.googleusercontent.com/proxy/cM3HaemekN9_ULGzp4SqYWk0lDJifHq8aat1NrvmGEXm26hFh1ytJh3yBTmYAzT4oarXetYpt-f-IaKlQsMx9c6VlKXFb6Rop6zXAe98BePtpQui5m3VZxBq5pX0fA" />
+                <img src="https://news.meeycdn.com/uploads/2020/10/1-chung-cu-cao-cap-gia-bao-nhieu.jpg" />
             </div>
             <div>
                 <img src="https://vesinhviethouse.com/wp-content/uploads/2021/04/ve-sinh-can-ho.jpg" />

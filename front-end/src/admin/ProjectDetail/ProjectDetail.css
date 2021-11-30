@@ -56,6 +56,12 @@
 }
 .btn--save-pd {
   background-color: rgba(17, 231, 17, 0.479);
+  display: flex;
+}
+.btn--save-pd > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .btn--save-pd:hover {
   background-color: rgba(17, 231, 17, 0.685);
@@ -65,6 +71,12 @@
 .btn--delete-pd {
   background-color: rgba(255, 0, 0, 0.623);
 }
+.btn--delete-pd > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .btn--delete-pd:hover {
   background-color: rgba(255, 0, 0, 0.712);
   cursor: pointer;

@@ -1,6 +1,9 @@
 .admin-rem-content {
   flex: 1;
   margin: 1rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 1rem;
 }
 
 .admin-rem-heading {
@@ -29,11 +32,14 @@
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   padding: 1rem 2rem 1rem 2rem;
   background-color: rgba(255, 255, 0, 0.473);
-  display: flex;
 }
-/* .rem-btn-addre > p {
+
+.rem-btn-addre > a {
   font-size: 15px;
-} */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .rem-search-bar {
   display: flex;
@@ -46,7 +52,7 @@
 
 .rem-search-input {
   display: flex;
-  margin-right: -4rem;
+  margin-right: -2rem;
   border: none;
   background-color: rgba(216, 216, 216, 0.404);
   padding: 1rem 2rem 1rem 2rem;
@@ -59,6 +65,7 @@
 
 td {
   text-align: center;
+  cursor: pointer;
 }
 th,
 td {
@@ -70,6 +77,12 @@ tr:nth-child(even) {
 }
 th {
   background-color: #cfa267;
+}
+
+.admin-btn-function {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .rem-table-re-detail {
@@ -85,21 +98,36 @@ th {
   cursor: pointer;
 }
 
+/* phần css này sẽ css luôn cho các btn bên các trang quản lí khác */
+
 .btn--view-rem,
 .btn--delete-rem {
   border: none;
-  padding: 1rem 2rem 1rem 2rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
 }
 .btn--view-rem {
   background-color: #1374d698;
   margin-right: 0.5rem;
+  display: flex;
 }
+.btn--view-rem > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .btn--view-rem:hover {
   background-color: #1374d6b2;
   cursor: pointer;
 }
 .btn--delete-rem {
   background-color: rgba(255, 0, 0, 0.623);
+  display: flex;
+}
+.btn--delete-rem > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .btn--delete-rem:hover {
   background-color: rgba(255, 0, 0, 0.712);

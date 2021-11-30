@@ -86,7 +86,7 @@ const filterList = [
 const cardList = [
     {
         image: 'https://abcland.vn/wp-content/uploads/2020/05/bat-dong-san-la-gi.jpg',
-        name: 'Mảnh đất bán',
+        name: 'Chính chủ cho thê căn hộ chung cư central field 219 trung kính, dt 70m2, giá 14tr/th',
         time: '20 ngày trước',
         price: '140 TRIỆU/THÁNG',
         area: '700',
@@ -351,31 +351,31 @@ const hotLocationList = [
 ]
 const newProjectList = [
     {
-        link: '',     //này là cái link gửi request mình BE nè
+        link: '/realestate',     //này là cái link gửi request mình BE nè
         img: 'https://cdn.houseviet.vn/images/project/20102021/the-beverly-s.jpg',
         name: 'THE BEVERLY',
         location: 'Quận 9, Hồ Chí Minh',
     },
     {
-        link: '',     //này là cái link gửi request mình BE nè
+        link: '/realestate',     //này là cái link gửi request mình BE nè
         img: 'https://zk812.com/wp-content/uploads/2021/08/mcp-parksunset-copy_rtil.jpg',
         name: 'THE KELWERY',
         location: 'Biên Hòa, Đồng Nai',
     },
     {
-        link: '',     //này là cái link gửi request mình BE nè
+        link: '/realestate',     //này là cái link gửi request mình BE nè
         img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr724Z_AkbnBx8lqieDu8kZRggCGal7pNAvjFfl-xQzch8chnbDHT9sgFQoyR2onmwik4&usqp=CAU',
         name: 'THE PROMETHEUS',
         location: 'Quận 1, Hà Nội',
     },
     {
-        link: '',     //này là cái link gửi request mình BE nè
+        link: '/realestate',     //này là cái link gửi request mình BE nè
         img: 'https://media-cdn.laodong.vn/Storage/NewsPortal/2021/10/20/965669/Anh-1.jpg',
         name: 'THE LIGHT',
         location: 'Quận 10, Hồ Chí Minh',
     },
     {
-        link: '',     //này là cái link gửi request mình BE nè
+        link: '/realestate',     //này là cái link gửi request mình BE nè
         img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRANGehyZuU6e7GxUnv3IMpr_YAmWezEqI6LA&usqp=CAU',
         name: 'THE POSEIDON',
         location: 'Vũng Tàu',

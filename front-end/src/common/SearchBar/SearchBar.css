@@ -11,7 +11,8 @@
     background-color: red;
     border-radius: 5px;
     color: #fff;
-    padding: 6px 12px;
+    height: 40px;
+    width: 101px;
     cursor: pointer;
     margin: 10px;
     border-left: 1px solid #dedede;
@@ -27,6 +28,7 @@
     background: #fff;
     cursor: pointer;
     margin: 10px;
+    position: relative;
  }
  .reset-btn:hover {
      background: #ccc;
@@ -60,3 +62,97 @@
     color: #dedede;
 }
 
+
+
+.reset-tooltip-container {
+    position: absolute;
+    top: 120%;
+    left: -10px;
+    display: none;
+    z-index: 999;
+    transition: all 0.4s ease-in-out;
+  }
+  .reset-tooltip-content {
+    position: relative;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 14px;
+    left: 30px;
+    transform: translateX(-50%);
+    top: 100%;
+    font-weight: normal;
+    white-space: nowrap;
+    border-radius: 3px;
+    padding: 8px;
+  }
+  .reset-top-delta {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    width: 12px;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .reset-icon:hover + .reset-tooltip-container {
+    display: block;
+  }
+  
+
+  .option-container{
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    font-size: 14px;
+    color: #8e887e;
+    padding: 3px 8px;
+    cursor: pointer;
+    width: 115px;
+    position: relative;
+}
+.option-label{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.option-container:hover {
+    background: #f5f6f7
+}
+.option-container:hover .option-list-container{
+    display: block;
+}
+.option-list-container{
+    position: absolute;
+    top: 100%;
+    min-width: 280px;
+    z-index: 999;
+    left: 0px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    display: none;
+    overflow-y: scroll;
+}
+.option-list{
+    height: 300px;
+}
+.option-item{
+    padding: 8px 15px;
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    align-items: center;
+}
+.option-item:hover {
+    background: var(--main-color);
+    color: #fff;
+}
+
+.option-item:hover .icon-arrow-right{
+    transform: translateX(10px);
+}
+.option-item:hover .option-item-name {
+    transform: translateX(10px);
+}

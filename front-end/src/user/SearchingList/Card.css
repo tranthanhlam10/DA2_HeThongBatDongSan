@@ -44,9 +44,11 @@
     margin-right: 5px;
     display: flex;
     align-items: center;
+    font-weight: 500;
 }
 .content-item{
     padding: 0 15px;
+    width: 643px;
 }
 .card-title{
     font-size: 19px;

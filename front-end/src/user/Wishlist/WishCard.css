@@ -1,4 +1,12 @@
-.wish-card {
+/* .wish-card {
+  padding: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+} */
+.wish-card-info {
   padding: 10px;
 
   display: flex;

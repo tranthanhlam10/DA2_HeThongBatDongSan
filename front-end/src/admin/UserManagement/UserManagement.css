@@ -1,6 +1,9 @@
 .admin-usm-content {
   flex: 1;
   margin: 1rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 1rem;
 }
 
 .admin-usm-heading {
@@ -30,6 +33,12 @@
   padding: 1rem 2rem 1rem 2rem;
   background-color: rgba(255, 255, 0, 0.473);
 }
+.usm-btn-addre > a {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .usm-search-bar {
   display: flex;
@@ -42,7 +51,7 @@
 
 .usm-search-input {
   display: flex;
-  margin-right: -4rem;
+  margin-right: -2rem;
   border: none;
   background-color: rgba(216, 216, 216, 0.404);
   padding: 1rem 2rem 1rem 2rem;
@@ -81,7 +90,7 @@ th {
   cursor: pointer;
 }
 
-.btn--view-usm,
+/* .btn--view-usm,
 .btn--delete-usm {
   border: none;
   padding: 1rem 2rem 1rem 2rem;
@@ -100,4 +109,4 @@ th {
 .btn--delete-usm:hover {
   background-color: rgba(255, 0, 0, 0.712);
   cursor: pointer;
-}
+} */

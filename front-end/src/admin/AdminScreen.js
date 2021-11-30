@@ -1,6 +1,6 @@
 import React from "react";
 import "./AdminScreen.css";
-import { Switch, Route, useRouteMatch } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, useRouteMatch } from "react-router-dom";
 import adminRoutes from "./adminRoutes";
 import AdminLeftBar from "../common/AdminLeftBar";
 export default function AdminScreen() {
@@ -19,8 +19,10 @@ export default function AdminScreen() {
     });
   return (
     <div className="home-admin">
-      <AdminLeftBar />
-      <Switch>{renderRoutes}</Switch>
+      <Router>
+        <AdminLeftBar />
+        <Switch>{renderRoutes}</Switch>
+      </Router>
     </div>
   );
 }

@@ -48,9 +48,24 @@ export default function RealEstateDetail() {
           </p>
 
           <div className="action">
-            <button className="btn--accept-red">Duyệt</button>
-            <button className="btn--refuse-red">Từ Chối</button>
-            <button className="btn--delete-red">Xóa</button>
+            <button className="btn--accept-red">
+              <a>
+                <span class="material-icons">check_circle</span>
+                <p>Duyệt</p>
+              </a>
+            </button>
+            <button className="btn--refuse-red">
+              <a>
+                <span class="material-icons">do_disturb_on</span>
+                <p>Từ chối</p>
+              </a>
+            </button>
+            <button className="btn--delete-red">
+              <a>
+                <span class="material-icons">delete</span>
+                <p>Xóa</p>
+              </a>
+            </button>
           </div>
         </div>
       </div>

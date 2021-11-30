@@ -1,0 +1,121 @@
+/* phần này trở đi là css co cái pop up, lát tách nó ra*/
+.popup-header {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.popup-pj-input-name {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.popup-pj-input-investor {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.popup-pj-input-intro {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.popup-pj-input-info {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.popup-pj-input-benefitcus {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.procedure-area {
+  display: flex;
+  justify-content: space-between;
+}
+.popup-pj-input-procedure {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.popup-pj-input-area {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.popup-pj-input-load-img {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.add-pj-btn,
+.reload-pj-btn {
+  border: none;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+.add-pj-btn > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reload-pj-btn > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add-pj-btn {
+  background-color: rgba(255, 255, 0, 0.575);
+  margin-right: 0.5rem;
+}
+.add-pj-btn:hover {
+  background-color: rgba(255, 255, 0, 0.575);
+  cursor: pointer;
+}
+.reload-pj-btn {
+  background-color: rgba(17, 231, 17, 0.479);
+}
+.reload-pj-btn:hover {
+  background-color: rgba(17, 231, 17, 0.479);
+  cursor: pointer;
+}
+
+.add-reload-button {
+  display: flex;
+  margin-left: auto;
+}

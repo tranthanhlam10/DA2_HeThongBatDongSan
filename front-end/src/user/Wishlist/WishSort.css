@@ -1,0 +1,36 @@
+.wish-sort-control {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+.wish-filter-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #dedede;
+  background-color: #fff;
+  width: 160px;
+  cursor: pointer;
+  justify-content: space-between;
+  position: relative;
+}
+.wish-sorted-list {
+  width: 160px;
+  position: absolute;
+  left: -1px;
+  top: 100%;
+  background-color: #fff;
+  display: none;
+}
+.wish-sorted-item {
+  border: 1px solid #dedede;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.wish-filter-header:hover .wish-sorted-list {
+  display: block;
+}
+.wish-sorted-item:hover {
+  background: #dedede;
+}

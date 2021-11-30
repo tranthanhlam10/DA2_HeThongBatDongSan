@@ -14,7 +14,7 @@ const adminRoutes = [
     main: () => <ProjectManagement />, //http://localhost:3000/admin
   },
   {
-    path: "/abc",
+    path: "/managestatistic",
     exact: true,
     main: () => <ManagerStatistic />, //http://localhost:3000/admin/abc
   },

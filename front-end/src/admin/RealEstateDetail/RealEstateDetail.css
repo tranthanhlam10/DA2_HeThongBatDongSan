@@ -58,6 +58,11 @@
 .btn--accept-red {
   background-color: rgba(17, 231, 17, 0.479);
 }
+.btn--accept-red > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .btn--accept-red:hover {
   background-color: rgba(17, 231, 17, 0.685);
@@ -71,6 +76,11 @@
   background-color: rgba(255, 0, 0, 0.712);
   cursor: pointer;
 }
+.btn--delete-red > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .btn--refuse-red {
   background-color: rgb(216, 144, 11);
@@ -78,4 +88,9 @@
 .btn--refuse-red:hover {
   background-color: rgb(216, 144, 11);
   cursor: pointer;
+}
+.btn--refuse-red > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

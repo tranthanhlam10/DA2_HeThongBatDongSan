@@ -9,7 +9,7 @@ export default function ProjectDetail() {
       <div className="admin-pd-content-detail">
         <div className="admin-pd-detail">
           <div className="admin-pd-information">
-            <p classNames="infor">Tên dự án: Vinhomes</p>
+            <p className="infor">Tên dự án: Vinhomes</p>
             <p className="infor">Chủ đầu tư: Đạt</p>
             <p className="infor">Địa chỉ: Sài Gòn</p>
           </div>
@@ -50,8 +50,18 @@ export default function ProjectDetail() {
             iusto dolorum commodi nam cupiditate magni!
           </p>
           <div className="action">
-            <button className="btn--save-pd">Lưu</button>
-            <button className="btn--delete-pd">Xóa</button>
+            <button className="btn--save-pd">
+              <a>
+                <span class="material-icons">archive</span>
+                <p>Lưu</p>
+              </a>
+            </button>
+            <button className="btn--delete-pd">
+              <a>
+                <span class="material-icons">delete</span>
+                <p>Xóa</p>
+              </a>
+            </button>
           </div>
         </div>
       </div>

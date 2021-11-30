@@ -1,7 +1,8 @@
 import React from "react";
-import "./Wishlist.css";
+import "./WishList.css";
 import SearchBar from "../../common/SearchBar/SearchBar";
 import WishCard from "./WishCard";
+import WishSort from "./WishSort";
 const Wishcardlist = [
   {
     img: "https://cdn.houseviet.vn/images/post/02022021/132567282206070776-380x190.jpg",
@@ -10,6 +11,7 @@ const Wishcardlist = [
     price: "14 TRIỆU/THÁNG",
     area: "70",
     location: "QUẬN NAM TỪ LIÊM, HÀ NỘI",
+    link: "/realestate",
   },
   {
     img: "https://cdn.houseviet.vn/images/post/02022021/132567282206070776-380x190.jpg",
@@ -18,6 +20,7 @@ const Wishcardlist = [
     price: "14 TRIỆU/THÁNG",
     area: "70",
     location: "QUẬN NAM TỪ LIÊM, HÀ NỘI",
+    link: "/realestate",
   },
 ];
 
@@ -29,14 +32,11 @@ export default function Wishlist() {
         <div className="wish-list-container">
           <div className="wish-heading">
             <div className="wish-title">
-              <p>Tin đăng đã lưu</p>
-              <p>Tổng số tin đã đăng</p>
+              <h2>Tin đăng đã lưu</h2>
+              <p>Tổng số 2 tin đăng</p>
             </div>
             <div className="con-wish-button">
-              <div className="wish-button">
-                <p>Lưu mới nhất</p>
-                <span className="material-icons">expand_more</span>
-              </div>
+              <WishSort />
             </div>
           </div>
           <div className="wish-card-container">
@@ -50,13 +50,14 @@ export default function Wishlist() {
                     time={reCard.time}
                     area={reCard.area}
                     img={reCard.img}
+                    link={reCard.link}
                   />
                 </div>
               );
             })}
           </div>
         </div>
-        <div className="wish-list-ads"></div>
+        {/* <div className="wish-list-ads"></div> */}
       </div>
     </div>
   );

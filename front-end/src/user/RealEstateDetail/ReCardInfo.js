@@ -5,12 +5,12 @@ import share1 from '../../assets/share1.png'
 import bed from '../../assets/bed.png'
 import bath from '../../assets/bath.png'
 import area from '../../assets/area.png'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 export default function ReCardInfo(props) {
-    const { price, name, address, numofbed, numofbath, areainfo, img,link } = props;
+    const { price, name, address, numofbed, numofbath, areainfo, img, link } = props;
     return (
         <div className="re-card-info-container">
-            <Link to={link} className="re-card-info-link">
+            <a href="/realestate" className="re-card-info-link">
                 <div className="re-card-img">
                     <img src={img}></img>
                 </div>
@@ -51,7 +51,7 @@ export default function ReCardInfo(props) {
                         </ul>
                     </div>
                 </div>
-            </Link>
+            </a>
         </div>
     )
 }

@@ -1,0 +1,119 @@
+.admin-ana-content {
+  width: 80%;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.ana-table-title {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.admin-ana-info {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/*CSS cho mục bất động sản*/
+.admin-ana-info-re {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.ana-info-re-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.ana-info-re-header {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.ana-info-re-body {
+  padding: 20px;
+  display: flex;
+}
+
+.ana-info-re-btn {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #cfa267;
+}
+
+/*CSS cho mục dự án*/
+.admin-ana-info-pj {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.ana-info-pj-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.ana-info-pj-header {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.ana-info-pj-body {
+  padding: 20px;
+  display: flex;
+}
+.ana-info-pj-btn {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #cfa267;
+}
+
+/*CSS cho mục tài khoản*/
+.admin-ana-info-us {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.ana-info-us-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.ana-info-us-header {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.ana-info-us-body {
+  padding: 20px;
+  display: flex;
+}
+.ana-info-us-btn {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #cfa267;
+}
+
+/*CSS cho mục biểu đồ*/
+.admin-ana-chart-table {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.admin-ana-table {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 240px;
+}
+.ana-table-header {
+  margin-bottom: 10px;
+  font-weight: bold;
+}

@@ -1,25 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './SortedBy.css'
 import { Link } from 'react-router-dom'
 const sortItems = [
     {
         displayName: 'Mới nhất',
-        link: '',
     },
     {
         displayName: 'Giá cao nhất',
-        link: '',
     },
     {
         displayName: 'Giá thấp nhất',
-        link: '',
     },
 ]
 export default function SortedBy() {
+    const [display, setDisplay] = useState('Sắp xếp theo')
     return (
         <div className="sort-control">
             <div className="filter-header">
-                Sắp xếp theo
+                {display}
                 <span className="material-icons">
                     expand_more
                 </span>
@@ -28,8 +26,8 @@ export default function SortedBy() {
                     {
                         sortItems.map((item, index) => {
                             return (
-                                <li className="sorted-item" key={index}>
-                                    <Link to={item.link}>{item.displayName}</Link>
+                                <li className="sorted-item" key={index} onClick={() => setDisplay(item.displayName)}>
+                                    <span>{item.displayName}</span>
                                 </li>
                             )
                         })

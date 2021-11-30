@@ -1,0 +1,108 @@
+/* phần này trở đi là css co cái pop up, lát tách nó ra*/
+.popup-header {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.popup-us-input-name {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.popup-us-input-email {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.popup-us-input-dob {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.popup-us-input-password {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.popup-us-input-phone {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.popup-us-input-role {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.popup-pj-input-load-img {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.add-us-btn,
+.reload-us-btn {
+  border: none;
+  padding: 1rem 2rem 1rem 2rem;
+}
+.add-us-btn > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reload-us-btn > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-us-btn {
+  background-color: rgba(255, 255, 0, 0.575);
+  margin-right: 0.5rem;
+}
+.add-us-btn:hover {
+  background-color: rgba(255, 255, 0, 0.575);
+  cursor: pointer;
+}
+.reload-us-btn {
+  background-color: rgba(17, 231, 17, 0.479);
+}
+.reload-us-btn:hover {
+  background-color: rgba(17, 231, 17, 0.479);
+  cursor: pointer;
+}
+
+.add-reload-button {
+  display: flex;
+  margin-left: auto;
+}

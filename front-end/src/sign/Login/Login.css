@@ -171,3 +171,11 @@
     font-size: 13px;
     color: red;
   }
+
+  .login-loading-btn{
+    width: 288px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

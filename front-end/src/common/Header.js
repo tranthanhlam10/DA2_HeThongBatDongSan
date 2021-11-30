@@ -3,6 +3,7 @@ import "./Header.css";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import heart from "../assets/heart.png";
+
 const navbarItems = [
   {
     displayName: "Nhà đất bán",
@@ -121,23 +122,23 @@ export default function Header() {
         <ul className="info-left">
           <li className="info-left-first">
             <span class="material-icons info-left-icon">email</span>
-            <a href="batdongsan@gmail.com">batdongsan@gmail.com</a>
+            <span>batdongsan@gmail.com</span>
           </li>
           <li>
             <span class="material-icons info-left-icon">phone_in_talk</span>
-            <a href="1800-1800">1800-1800</a>
+            <span>1800-1800</span>
           </li>
         </ul>
         <ul className="info-right">
           <li>
-            <Link to="/login" className="login-btn">
+            <a href="/login" className="login-btn">
               Đăng nhập
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="/register" className="register-btn">
+            <a href="register" className="register-btn">
               Đăng kí
-            </Link>
+            </a>
           </li>
         </ul>
       </div>
@@ -153,8 +154,9 @@ export default function Header() {
               <li className="header-navbar" key={index}>
                 <Link to={item.link} className="navbar-link">
                   {item.displayName}
+                  <div className="header-line-hover"></div>
                 </Link>
-                <div className="header-line-hover"></div>
+
                 <ul className="navbar-hover-list">
                   {item.dropDownItems.map((item, index) => {
                     return (
@@ -169,14 +171,24 @@ export default function Header() {
           })}
         </ul>
         <ul className="header-col">
-          <li>
-            <Link to="/wishlist" classname="heart-icon">
+          <li className="header-heart-icon-container">
+            <Link to="/wishlist" className="heart-icon">
               <img src={heart} alt="heart" />
             </Link>
+            <div className="header-tooltip-container">
+              <div className="header-tooltip-content">
+                Danh sách tin đăng đã lưu
+                <span className="header-top-delta">
+                </span>
+              </div>
+            </div>
+            <div className="num-of-wishlist">1</div>
           </li>
-          <li className="navbar-createFeed">
-            <span className="material-icons">add</span>
-            <p>Đăng tin</p>
+          <li>
+            <Link to="/post" className="navbar-createFeed post-btn">
+              <span className="material-icons">add</span>
+              <p>Đăng tin</p>
+            </Link>
           </li>
         </ul>
       </div>

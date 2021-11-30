@@ -1,0 +1,40 @@
+.project-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, o, 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-inner {
+  position: relative;
+  padding: 32px;
+  width: 100%;
+  max-width: 640px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.popup-innner .close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  top: 0;
+  right: 0;
+}
+
+.close-btn {
+  display: flex;
+  align-self: flex-end;
+  padding: 2px;
+  background-color: red;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

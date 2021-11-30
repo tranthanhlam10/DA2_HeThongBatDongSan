@@ -1,7 +1,15 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './Card.css'
 import { Link } from 'react-router-dom'
 export default function Card(props) {
+    const [colorAddWL, setColorAddWL] = useState('#fff')
+    const [isClickWL, setIsClickWL] = useState(false)
+    const handleClickAddWishList = () => {
+        setIsClickWL(!isClickWL)
+    }
+    useEffect(() => {
+        isClickWL ? setColorAddWL('red') : setColorAddWL('#fff')
+    }, [isClickWL])
     const { image, name, time, price, area, location, link } = props;
     return (
         <div className="card-container">
@@ -9,12 +17,12 @@ export default function Card(props) {
                 <Link to={link}>
                     <img src={image}></img>
                 </Link>
-                <button id="favorite">
+                <button id="favorite" onClick={handleClickAddWishList}>
                     <div className="favorite-content">
-                        <span className="favorite-name">
+                        <span className="favorite-name" style={{ color: colorAddWL }}>
                             Lưu tin
                         </span>
-                        <span className="material-icons fovorite-icon">
+                        <span className="material-icons fovorite-icon" style={{ color: colorAddWL }}>
                             favorite
                         </span>
                     </div>
