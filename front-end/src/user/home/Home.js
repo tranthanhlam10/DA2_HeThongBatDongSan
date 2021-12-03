@@ -5,19 +5,19 @@ import ReAdsProduct from "./ReAdsProduct";
 import HomeSearchBar from "./HomeSearchBar";
 import { Link } from "react-router-dom";
 import RePlace from "./RePlace";
-import FooterMiddle from './FooterMiddle';
+import FooterMiddle from "./FooterMiddle";
 export default function Home() {
   return (
     <div className="home-container">
       <HomeSearchBar />
       <div className="home-container-center">
         <div className="home-content">
-          <div className="projectTitle-container">
+          <div className="projectitle-container">
             <div className="title">DỰ ÁN NỔI BẬT</div>
-            <p className="description">
+            <p className="home-description">
               Tổng hợp danh sách các dự án Bất động sản nổi bật mới nhất. Thông
-              tin chi tiết về giá bán, vị trí, chính sách ưu đãi sẽ được cập nhật
-              liên tục tại BatDongSan.
+              tin chi tiết về giá bán, vị trí, chính sách ưu đãi sẽ được cập
+              nhật liên tục tại BatDongSan.
             </p>
           </div>
           <HomeCarouselOwl />

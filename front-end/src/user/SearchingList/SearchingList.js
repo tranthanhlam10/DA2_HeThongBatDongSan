@@ -92,7 +92,7 @@ const cardList = [
         price: '140 TRIỆU/THÁNG',
         area: '700',
         location: 'Biên Hòa, Đồng Nai',
-        link: 'realestate'
+        link: '/realestate'
     },
     {
         image: 'https://luatduonggia.vn/wp-content/uploads/2015/08/dong-san-va-bat-dong-san-theo-quy-dinh-cua-phap-luat-viet-nam.jpeg',
@@ -101,7 +101,7 @@ const cardList = [
         price: '100 TRIỆU/THÁNG',
         area: '90',
         location: 'QUẬN NAM TỪ LIÊM, HÀ NỘI',
-        link: 'realestate'
+        link: '/realestate'
     },
     {
         image: 'https://media.ex-cdn.com/EXP/media.taichinhdoanhnghiep.net.vn/files/news/2021/03/26/ha-noi-diem-danh-nhieu-ong-trum-bat-dong-san-tri-hoan-nop-tien-dat-134146.jpg',
@@ -110,7 +110,7 @@ const cardList = [
         price: '140 TRIỆU/THÁNG',
         area: '800',
         location: 'QUẬN NAM TỪ LIÊM, HÀ NỘI',
-        link: 'realestate'
+        link: '/realestate'
     },
     {
         image: 'https://cafefcdn.com/thumb_w/650/203337114487263232/2021/4/14/photo1618390629705-1618390629826977577415.jpg',
@@ -119,7 +119,7 @@ const cardList = [
         price: '200 TRIỆU/THÁNG',
         area: '80',
         location: 'QUẬN NAM TỪ LIÊM, HÀ NỘI',
-        link: 'realestate'
+        link: '/realestate'
     },
     {
         image: 'https://baoquocte.vn/stores/news_dataimages/quangtung/082021/10/20/4246_228221946_550497939486560_5559808499518523630_n.jpg?rt=20210810204248',
@@ -128,7 +128,7 @@ const cardList = [
         price: '38 TRIỆU/THÁNG',
         area: '90',
         location: 'QUẬN NAM TỪ LIÊM, HÀ NỘI',
-        link: 'realestate'
+        link: '/realestate'
     },
     {
         image: 'https://st.nhipcaudautu.vn/staticFile/Subject/2019/12/23/batdongsan_231710228.jpg',
@@ -137,7 +137,7 @@ const cardList = [
         price: '14 TRIỆU/THÁNG',
         area: '70',
         location: 'QUẬN NAM TỪ LIÊM, HÀ NỘI',
-        link: 'realestate'
+        link: '/realestate'
     },
     {
         image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAOtPXv6YQyuFNiZfW9aeJl91aWstGkPNFfA&usqp=CAU',
@@ -146,7 +146,7 @@ const cardList = [
         price: '180 TRIỆU/THÁNG',
         area: '90',
         location: 'QUẬN NAM TỪ LIÊM, HÀ NỘI',
-        link: 'realestate'
+        link: '/realestate'
     },
     {
         image: 'http://hanoimoi.com.vn/Uploads/images/tuandiep/2020/05/07/co-phan-ta.jpg',
@@ -155,7 +155,7 @@ const cardList = [
         price: '1234 TRIỆU/THÁNG',
         area: '70',
         location: 'Thành phố HCM',
-        link: 'realestate'
+        link: '/realestate'
     },
     {
         image: 'https://nld.mediacdn.vn/291774122806476800/2021/9/6/11-chot-1630929874162447727574.jpg',
@@ -164,7 +164,7 @@ const cardList = [
         price: '14 TRIỆU/THÁNG',
         area: '70',
         location: 'QUẬN NAM TỪ LIÊM, HÀ NỘI',
-        link: 'realestate'
+        link: '/realestate'
     },
     {
         image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVghrfD9i3fLaUYNz-bzGwjTX23rjmdQpgnA&usqp=CAU',
@@ -173,7 +173,7 @@ const cardList = [
         price: '14 TRIỆU/THÁNG',
         area: '70',
         location: 'QUẬN NAM TỪ LIÊM, HÀ NỘI',
-        link: 'realestate'
+        link: '/realestate'
     },
     {
         image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVhmeJ7a12ES4bZI-du6c_oq1MqIVeSpdREQ&usqp=CAU',
@@ -182,7 +182,7 @@ const cardList = [
         price: '14 TRIỆU/THÁNG',
         area: '70',
         location: 'Đồng Nai',
-        link: 'realestate'
+        link: '/realestate'
     },
     {
         image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPs3tsEj_KZr03ednfH4jSNqS29iMnlM7PuQ&usqp=CAU',
@@ -191,7 +191,7 @@ const cardList = [
         price: '14 TRIỆU/THÁNG',
         area: '70',
         location: 'Bình Dương',
-        link: 'realestate'
+        link: '/realestate'
     },
     {
         image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBKHCbYx2IoVhYwR3S-RzhJlAosYx4dsfWCg&usqp=CAU',
@@ -200,7 +200,7 @@ const cardList = [
         price: '14 TRIỆU/THÁNG',
         area: '70',
         location: 'Đồng Nai',
-        link: 'realestate'
+        link: '/realestate'
     },
     {
         image: 'https://icdn.dantri.com.vn/thumb_w/640/2019/02/07/vinhomes-1549521123597.png',
@@ -209,7 +209,7 @@ const cardList = [
         price: '14 TRIỆU/THÁNG',
         area: '70',
         location: 'Hà Nội',
-        link: 'realestate'
+        link: '/realestate'
     },
     {
         image: 'https://globalway.vn/media/bat-dong-san/2020_12/bat-dong-san-my-1.png',
@@ -218,7 +218,7 @@ const cardList = [
         price: '14 TRIỆU/THÁNG',
         area: '70',
         location: 'QUẬN NAM TỪ LIÊM, HÀ NỘI',
-        link: 'realestate'
+        link: '/realestate'
     },
     {
         image: 'https://static1.cafeland.vn/cafelandnew/hinh-anh/2021/05/10/156/image-20210510172515-1.jpeg',
@@ -227,7 +227,7 @@ const cardList = [
         price: '14 TRIỆU/THÁNG',
         area: '70',
         location: 'Bình Dương',
-        link: 'realestate'
+        link: '/realestate'
     },
     {
         image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZKWl6AuybXiIsoHqkGeT9BjmQFkxXNqqeYA&usqp=CAU',
@@ -236,7 +236,7 @@ const cardList = [
         price: '14 TRIỆU/THÁNG',
         area: '70',
         location: 'QUẬN NAM TỪ LIÊM, HÀ NỘI',
-        link: 'realestate'
+        link: '/realestate'
     },
     {
         image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtM36iSpR2qxnXJLZlfbiISa798xweQvgFNw&usqp=CAU',
@@ -245,7 +245,7 @@ const cardList = [
         price: '290 TRIỆU/THÁNG',
         area: '700',
         location: 'HÀ NỘI',
-        link: 'realestate'
+        link: '/realestate'
     },
     {
         image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmYt990ozCjjr0uYcnnrEVmeWYpCJ3YuAGoA&usqp=CAU',
@@ -254,7 +254,7 @@ const cardList = [
         price: '14 TRIỆU/THÁNG',
         area: '70',
         location: 'HÀ NỘI',
-        link: 'realestate'
+        link: '/realestate'
     },
     {
         image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qdExxAwOEhtO880DRH6IBlXG1_kigugWYw&usqp=CAU',
@@ -263,7 +263,7 @@ const cardList = [
         price: '14 TRIỆU/THÁNG',
         area: '700',
         location: 'Hà Nội',
-        link: 'realestate'
+        link: '/realestate'
     },
 
 
@@ -387,21 +387,21 @@ const newProjectList = [
 function SearchingList(props) {
     const [cards, setCards] = useState(cardList.slice(0, 100));
     const [pageNumber, setPageNumber] = useState(0)
-    const [numOfCard,setNumOfCart] = useState(0)
+    const [numOfCard, setNumOfCart] = useState(0)
     const cardsPerPage = 10
     const pagesVisited = pageNumber * cardsPerPage
-    
-    
+
+
     const displayCards = cards
         .slice(pagesVisited, pagesVisited + cardsPerPage)
         .map((card) => {
             return (
                 <div>
-                <Card  image={card.image} name={card.name} time={card.time} price={card.price} area={card.area} location={card.location} link={card.link} />
+                    <Card image={card.image} name={card.name} time={card.time} price={card.price} area={card.area} location={card.location} link={card.link} />
                 </div>
             );
         })
-    
+
     const pageCount = Math.ceil(cards.length / cardsPerPage)
     const changePage = ({ selected }) => {
         setPageNumber(selected);
@@ -413,8 +413,8 @@ function SearchingList(props) {
         arrow_back_ios
     </span>
 
-    const callBackMethod= ()=>{
-     props.sendData(numOfCard);
+    const callBackMethod = () => {
+        props.sendData(numOfCard);
     }
 
 

@@ -5,189 +5,185 @@ import { Link, useHistory } from "react-router-dom";
 import ReactLoading from "react-loading";
 
 export default function HomeSearchBar() {
-  const history = useHistory()
-  const [isLoading, setIsLoading] = useState(false)
-  const [selectTab, setSelectTab] = useState()
+  const history = useHistory();
+  const [isLoading, setIsLoading] = useState(false);
+  const [selectTab, setSelectTab] = useState();
 
-  const [backgroundSell, setBackgroundSell] = useState('rgba(0,0,0,.6)')
-  const [backgroundRent, setBackgroundRent] = useState('rgba(255,255,255,.6)')
-  const [colorSell, setColorSell] = useState('#fff')
-  const [colorRent, setColorRent] = useState('#000')
-  const [isSelectSell, setIsSelectSell] = useState(true)
+  const [backgroundSell, setBackgroundSell] = useState("rgba(0,0,0,.6)");
+  const [backgroundRent, setBackgroundRent] = useState("rgba(255,255,255,.6)");
+  const [colorSell, setColorSell] = useState("#fff");
+  const [colorRent, setColorRent] = useState("#000");
+  const [isSelectSell, setIsSelectSell] = useState(true);
 
-  const [display, setDisplay] = useState('none')
-  const [areaOptionDisplay, setAreaOptionDisplay] = useState('none')
-  const [priceOptionDisplay, setPriceOptionDisplay] = useState('none')
-  const [squareOptionDisplay, setSquareOptionDisplay] = useState('none')
-  const [projectOptionDisplay, setProjectOptionDisplay] = useState('none')
-  const [directOptionDisplay, setDirectOptionDisplay] = useState('none')
+  const [display, setDisplay] = useState("none");
+  const [areaOptionDisplay, setAreaOptionDisplay] = useState("none");
+  const [priceOptionDisplay, setPriceOptionDisplay] = useState("none");
+  const [squareOptionDisplay, setSquareOptionDisplay] = useState("none");
+  const [projectOptionDisplay, setProjectOptionDisplay] = useState("none");
+  const [directOptionDisplay, setDirectOptionDisplay] = useState("none");
 
-  const [iconArrow, setIconArrow] = useState(<span className="material-icons">expand_more</span>)
-  const [iconArrowArea, setIconArrowArea] = useState(<span className="material-icons">expand_more</span>)
-  const [iconArrowPrice, setIconArrowPrice] = useState(<span className="material-icons">expand_more</span>)
-  const [iconArrowSquare, setIconArrowSquare] = useState(<span className="material-icons">expand_more</span>)
-  const [iconArrowProject, setIconArrowProject] = useState(<span className="material-icons">expand_more</span>)
-  const [iconArrowDirect, setIconArrowDirect] = useState(<span className="material-icons">expand_more</span>)
+  const [iconArrow, setIconArrow] = useState(
+    <span className="material-icons">expand_more</span>
+  );
+  const [iconArrowArea, setIconArrowArea] = useState(
+    <span className="material-icons">expand_more</span>
+  );
+  const [iconArrowPrice, setIconArrowPrice] = useState(
+    <span className="material-icons">expand_more</span>
+  );
+  const [iconArrowSquare, setIconArrowSquare] = useState(
+    <span className="material-icons">expand_more</span>
+  );
+  const [iconArrowProject, setIconArrowProject] = useState(
+    <span className="material-icons">expand_more</span>
+  );
+  const [iconArrowDirect, setIconArrowDirect] = useState(
+    <span className="material-icons">expand_more</span>
+  );
 
-  const [isAllowDropdown, setIsAllowDropdown] = useState(true)
+  const [isAllowDropdown, setIsAllowDropdown] = useState(true);
   const handleLoading = () => {
-    setIsLoading(true)
+    setIsLoading(true);
     setTimeout(() => {
-      history.push('/searchinglist')
-    }, 3000)
-  }
-  const searchBtn = <button className="button-search" onClick={() => handleLoading()}>
-    <span className="material-icons">search</span>
-    <i className="icon-search"></i>
-    <span>Tìm kiếm</span>
-  </button>
+      history.push("/searchinglist");
+    }, 3000);
+  };
+  const searchBtn = (
+    <button className="button-search" onClick={() => handleLoading()}>
+      <span className="material-icons">search</span>
+      <i className="icon-search"></i>
+      <span>Tìm kiếm</span>
+    </button>
+  );
 
-  const loading = <button className="button-search">
-    <ReactLoading type="bars" />
-  </button>
+  const loading = (
+    <button className="button-search">
+      <ReactLoading type="bubbles" />
+    </button>
+  );
 
   const sellStyle = {
     background: backgroundSell,
     color: colorSell,
     // backgroundColor: this.state.backgroundColor
-  }
+  };
 
   const rentStyle = {
     background: backgroundRent,
     color: colorRent,
-  }
+  };
 
   const handleClickSell = () => {
-    setBackgroundRent('rgba(255,255,255,.6)')
-    setColorRent('#000')
-    setBackgroundSell('rgba(0,0,0,.6)')
-    setColorSell('#fff')
-  }
+    setBackgroundRent("rgba(255,255,255,.6)");
+    setColorRent("#000");
+    setBackgroundSell("rgba(0,0,0,.6)");
+    setColorSell("#fff");
+  };
   const handleClickRent = () => {
-    setBackgroundSell('rgba(255,255,255,.6)')
-    setColorSell('#000')
-    setBackgroundRent('rgba(0,0,0,.6)')
-    setColorRent('#fff')
-  }
+    setBackgroundSell("rgba(255,255,255,.6)");
+    setColorSell("#000");
+    setBackgroundRent("rgba(0,0,0,.6)");
+    setColorRent("#fff");
+  };
 
   const handleDisplay = () => {
-    if (display === 'none' && isAllowDropdown) {
-      setDisplay('block')
-      setIconArrow(<span className="material-icons">
-        expand_less
-      </span>)
-      setIsAllowDropdown(false)
+    if (display === "none" && isAllowDropdown) {
+      setDisplay("block");
+      setIconArrow(<span className="material-icons">expand_less</span>);
+      setIsAllowDropdown(false);
     }
-    if (display === 'block' && !isAllowDropdown) {
-      setDisplay('none')
-      setIconArrow(<span className="material-icons">
-        expand_more
-      </span>)
-      setIsAllowDropdown(true)
+    if (display === "block" && !isAllowDropdown) {
+      setDisplay("none");
+      setIconArrow(<span className="material-icons">expand_more</span>);
+      setIsAllowDropdown(true);
     }
-  }
+  };
 
   const handleDisplayArea = () => {
-    if (areaOptionDisplay === 'none' && isAllowDropdown) {
-      setAreaOptionDisplay('block')
-      setIconArrowArea(<span className="material-icons">
-        expand_less
-      </span>)
-      setIsAllowDropdown(false)
+    if (areaOptionDisplay === "none" && isAllowDropdown) {
+      setAreaOptionDisplay("block");
+      setIconArrowArea(<span className="material-icons">expand_less</span>);
+      setIsAllowDropdown(false);
     }
-    if (areaOptionDisplay === 'block' && !isAllowDropdown) {
-      setAreaOptionDisplay('none')
-      setIconArrowArea(<span className="material-icons">
-        expand_more
-      </span>)
-      setIsAllowDropdown(true)
+    if (areaOptionDisplay === "block" && !isAllowDropdown) {
+      setAreaOptionDisplay("none");
+      setIconArrowArea(<span className="material-icons">expand_more</span>);
+      setIsAllowDropdown(true);
     }
-  }
+  };
   const handleDisplayPrice = () => {
-    if (priceOptionDisplay === 'none' && isAllowDropdown) {
-      setPriceOptionDisplay('block')
-      setIconArrowPrice(<span className="material-icons">
-        expand_less
-      </span>)
-      setIsAllowDropdown(false)
-    } if (priceOptionDisplay === 'block' && !isAllowDropdown) {
-      setPriceOptionDisplay('none')
-      setIconArrowPrice(<span className="material-icons">
-        expand_more
-      </span>)
-      setIsAllowDropdown(true)
+    if (priceOptionDisplay === "none" && isAllowDropdown) {
+      setPriceOptionDisplay("block");
+      setIconArrowPrice(<span className="material-icons">expand_less</span>);
+      setIsAllowDropdown(false);
     }
-  }
+    if (priceOptionDisplay === "block" && !isAllowDropdown) {
+      setPriceOptionDisplay("none");
+      setIconArrowPrice(<span className="material-icons">expand_more</span>);
+      setIsAllowDropdown(true);
+    }
+  };
   const handleDisplaySquare = () => {
-    if (squareOptionDisplay === 'none' && isAllowDropdown) {
-      setSquareOptionDisplay('block')
-      setIconArrowSquare(<span className="material-icons">
-        expand_less
-      </span>)
-      setIsAllowDropdown(false)
-    } if (squareOptionDisplay === 'block' && !isAllowDropdown) {
-      setSquareOptionDisplay('none')
-      setIconArrowSquare(<span className="material-icons">
-        expand_more
-      </span>)
-      setIsAllowDropdown(true)
+    if (squareOptionDisplay === "none" && isAllowDropdown) {
+      setSquareOptionDisplay("block");
+      setIconArrowSquare(<span className="material-icons">expand_less</span>);
+      setIsAllowDropdown(false);
     }
-  }
+    if (squareOptionDisplay === "block" && !isAllowDropdown) {
+      setSquareOptionDisplay("none");
+      setIconArrowSquare(<span className="material-icons">expand_more</span>);
+      setIsAllowDropdown(true);
+    }
+  };
 
   const handleDisplayProject = () => {
-    if (projectOptionDisplay === 'none' && isAllowDropdown) {
-      setProjectOptionDisplay('block')
-      setIconArrowProject(<span className="material-icons">
-        expand_less
-      </span>)
-      setIsAllowDropdown(false)
-    } if (projectOptionDisplay === 'block' && !isAllowDropdown) {
-      setProjectOptionDisplay('none')
-      setIconArrowProject(<span className="material-icons">
-        expand_more
-      </span>)
-      setIsAllowDropdown(true)
+    if (projectOptionDisplay === "none" && isAllowDropdown) {
+      setProjectOptionDisplay("block");
+      setIconArrowProject(<span className="material-icons">expand_less</span>);
+      setIsAllowDropdown(false);
     }
-  }
+    if (projectOptionDisplay === "block" && !isAllowDropdown) {
+      setProjectOptionDisplay("none");
+      setIconArrowProject(<span className="material-icons">expand_more</span>);
+      setIsAllowDropdown(true);
+    }
+  };
 
   const handleDisplayDirect = () => {
-    if (directOptionDisplay === 'none' && isAllowDropdown) {
-      setDirectOptionDisplay('block')
-      setIconArrowDirect(<span className="material-icons">
-        expand_less
-      </span>)
-      setIsAllowDropdown(false)
-    } if (directOptionDisplay === 'block' && !isAllowDropdown) {
-      setDirectOptionDisplay('none')
-      setIconArrowDirect(<span className="material-icons">
-        expand_more
-      </span>)
-      setIsAllowDropdown(true)
+    if (directOptionDisplay === "none" && isAllowDropdown) {
+      setDirectOptionDisplay("block");
+      setIconArrowDirect(<span className="material-icons">expand_less</span>);
+      setIsAllowDropdown(false);
     }
-  }
+    if (directOptionDisplay === "block" && !isAllowDropdown) {
+      setDirectOptionDisplay("none");
+      setIconArrowDirect(<span className="material-icons">expand_more</span>);
+      setIsAllowDropdown(true);
+    }
+  };
   const typeReList = [
     {
-      displayName: 'Tất cả nhà đất'
+      displayName: "Tất cả nhà đất",
     },
     {
-      displayName: 'Căn hộ chung cư'
+      displayName: "Căn hộ chung cư",
     },
     {
-      displayName: 'Các loại nhà bán'
+      displayName: "Các loại nhà bán",
     },
     {
-      displayName: 'Nhà riêng'
+      displayName: "Nhà riêng",
     },
     {
-      displayName: 'Nhà biệt thự, liền kề'
+      displayName: "Nhà biệt thự, liền kề",
     },
     {
-      displayName: 'Nhà mặt phố'
+      displayName: "Nhà mặt phố",
     },
     {
-      displayName: 'Các loại đất bán'
+      displayName: "Các loại đất bán",
     },
-  ]
+  ];
 
   const cityItems = [
     {
@@ -294,7 +290,7 @@ export default function HomeSearchBar() {
     {
       displayName: "The Grand Manhattan",
     },
-  ]
+  ];
   const directItems = [
     {
       displayName: "Hướng Đông",
@@ -320,7 +316,7 @@ export default function HomeSearchBar() {
     {
       displayName: "Hướng Đông-Nam",
     },
-  ]
+  ];
   return (
     <div className="search-banner">
       <iframe
@@ -332,28 +328,35 @@ export default function HomeSearchBar() {
       ></iframe>
       <div className="search-tab-form">
         <div className="search-tab">
-          <div className="search-tab-buying" style={sellStyle} onClick={handleClickSell}>Nhà đất bán</div>
-          <div className="search-tab-rent" style={rentStyle} onClick={handleClickRent}>Nhà đất cho thuê</div>
+          <div
+            className="search-tab-buying"
+            style={sellStyle}
+            onClick={handleClickSell}
+          >
+            Nhà đất bán
+          </div>
+          <div
+            className="search-tab-rent"
+            style={rentStyle}
+            onClick={handleClickRent}
+          >
+            Nhà đất cho thuê
+          </div>
         </div>
         <div className="search-form">
           <div className="searching-bar">
             <div className="realestate-type-btn" onClick={handleDisplay}>
-              <div className="option-box">Loại bất động sản
-              </div>
-              <div className="option-label">
-                {iconArrow}
-              </div>
+              <div className="option-box">Loại bất động sản</div>
+              <div className="option-label">{iconArrow}</div>
               <div className="re-style-dropdown" style={{ display: display }}>
                 <ul className="re-style-list">
-                  {
-                    typeReList.map((item, index) => {
-                      return (
-                        <li className="re-style-item" key={index}>
-                          {item.displayName}
-                        </li>
-                      )
-                    })
-                  }
+                  {typeReList.map((item, index) => {
+                    return (
+                      <li className="re-style-item" key={index}>
+                        {item.displayName}
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             </div>
@@ -370,90 +373,103 @@ export default function HomeSearchBar() {
             {isLoading ? loading : searchBtn}
           </div>
 
-          <div className="searching-option" >
+          <div className="searching-option">
             <div className="home-searchbar-option" onClick={handleDisplayArea}>
               <span>Toàn quốc</span>
               {iconArrowArea}
-              <div className="option-search-dropdown" style={{ display: areaOptionDisplay }}>
+              <div
+                className="option-search-dropdown"
+                style={{ display: areaOptionDisplay }}
+              >
                 <ul className="option-search-list">
-                  {
-                    cityItems.map((item, index) => {
-                      return (
-                        <li className="option-search-item" key={index}>
-                          {item.displayName}
-                        </li>
-                      )
-                    })
-                  }
+                  {cityItems.map((item, index) => {
+                    return (
+                      <li className="option-search-item" key={index}>
+                        {item.displayName}
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             </div>
             <div className="home-searchbar-option" onClick={handleDisplayPrice}>
               <span>Mức giá</span>
               {iconArrowPrice}
-              <div className="option-search-dropdown" style={{ display: priceOptionDisplay }}>
+              <div
+                className="option-search-dropdown"
+                style={{ display: priceOptionDisplay }}
+              >
                 <ul className="option-search-list">
-                  {
-                    priceItems.map((item, index) => {
-                      return (
-                        <li className="option-search-item" key={index}>
-                          {item.displayName}
-                        </li>
-                      )
-                    })
-                  }
+                  {priceItems.map((item, index) => {
+                    return (
+                      <li className="option-search-item" key={index}>
+                        {item.displayName}
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             </div>
-            <div className="home-searchbar-option" onClick={handleDisplaySquare}>
+            <div
+              className="home-searchbar-option"
+              onClick={handleDisplaySquare}
+            >
               <span>Diện tích</span>
               {iconArrowSquare}
-              <div className="option-search-dropdown" style={{ display: squareOptionDisplay }}>
+              <div
+                className="option-search-dropdown"
+                style={{ display: squareOptionDisplay }}
+              >
                 <ul className="option-search-list">
-                  {
-                    squareItems.map((item, index) => {
-                      return (
-                        <li className="option-search-item" key={index}>
-                          {item.displayName}
-                        </li>
-                      )
-                    })
-                  }
+                  {squareItems.map((item, index) => {
+                    return (
+                      <li className="option-search-item" key={index}>
+                        {item.displayName}
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
-
             </div>
-            <div className="home-searchbar-option" onClick={handleDisplayProject}>
+            <div
+              className="home-searchbar-option"
+              onClick={handleDisplayProject}
+            >
               <span>Dự án</span>
               {iconArrowProject}
-              <div className="option-search-dropdown" style={{ display: projectOptionDisplay }}>
+              <div
+                className="option-search-dropdown"
+                style={{ display: projectOptionDisplay }}
+              >
                 <ul className="option-search-list">
-                  {
-                    projectItems.map((item, index) => {
-                      return (
-                        <li className="option-search-item" key={index}>
-                          {item.displayName}
-                        </li>
-                      )
-                    })
-                  }
+                  {projectItems.map((item, index) => {
+                    return (
+                      <li className="option-search-item" key={index}>
+                        {item.displayName}
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             </div>
-            <div className="home-searchbar-option" onClick={handleDisplayDirect}>
-              <span>Hướng nhà/đất</span>
+            <div
+              className="home-searchbar-option"
+              onClick={handleDisplayDirect}
+            >
+              <span>Hướng</span>
               {iconArrowDirect}
-              <div className="option-search-dropdown" style={{ display: directOptionDisplay }}>
+              <div
+                className="option-search-dropdown"
+                style={{ display: directOptionDisplay }}
+              >
                 <ul className="option-search-list">
-                  {
-                    directItems.map((item, index) => {
-                      return (
-                        <li className="option-search-item" key={index}>
-                          {item.displayName}
-                        </li>
-                      )
-                    })
-                  }
+                  {directItems.map((item, index) => {
+                    return (
+                      <li className="option-search-item" key={index}>
+                        {item.displayName}
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             </div>

@@ -37,8 +37,8 @@
     text-transform: uppercase;
     margin-bottom: 25px;
 }
-.register-col1-content{
- 
+.register-col1-content > span{
+    line-height: 25px;
 }
 .register-col2-title{
     color: rgba(207,162,103,1);

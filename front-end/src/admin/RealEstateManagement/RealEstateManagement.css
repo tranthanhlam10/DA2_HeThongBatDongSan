@@ -4,6 +4,7 @@
   border: 2px solid black;
   border-radius: 5px;
   padding: 1rem;
+  background: white;
 }
 
 .admin-rem-heading {
@@ -18,16 +19,21 @@
   font-size: 2rem;
 }
 .admin-rem-signout {
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 24px;
-  border-radius: 0.5rem;
-  background-color: red;
+  border: 1px solid #a18474;
+  border-radius: 10px;
   padding: 2px;
   cursor: pointer;
 }
 
 .admin-rem-signout > a {
   display: flex;
+}
+
+.admin-rem-signout:hover {
+  color: #635353;
+  background: #f2f2f2;
 }
 .btn-signout {
   margin-right: 5px;

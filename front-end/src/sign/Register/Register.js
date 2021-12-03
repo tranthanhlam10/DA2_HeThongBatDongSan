@@ -4,7 +4,7 @@ import { Link, Redirect, useHistory } from 'react-router-dom'
 import ReactLoading from "react-loading";
 export default function Register() {
 
-    const informationText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque posuere porta diam eget laoreet. Duis auctor, nisi ac auctor imperdiet, mi ligula ultrices ex, sed malesuada erat ex eget metus. Phasellus sed condimentum erat. Etiam nulla quam, aliquet sit amet pretium in, eleifend pretium massa. Fusce porta maximus tempor. Cras quis efficitur ante. Sed maximus nulla sit amet odio placerat mollis. Vestibulum quis tincidunt enim.Aenean porta dolor ut nisi consequat aliquet.Integer varius condimentum lacus"
+    const informationText = "Chúng tôi điều hành trang web www.muabandat.com.vn. Chúng tôi là Công ty TNHH MTV UIT, một công ty đăng ký tại Việt Nam theo số mã số 0806456324 và có trụ sở chính và địa chỉ giao dịch chính tại khu phố 6, Thủ Đức, Thành phố Hồ Chí Minh."
 
 
     const history = useHistory();
@@ -97,6 +97,7 @@ export default function Register() {
                                         setBorder('1px solid #ccc')
                                         setIsValid(true)
                                         handleLoading()
+                                        AlertDialog('Đăng kí tài khoản thành công')
                                     }
                                 }
                             }
@@ -109,7 +110,7 @@ export default function Register() {
 
     const registerBtn = <button className="register-button"
         onClick={validate}>
-        Register
+        Đăng kí
     </button>
     const loadingBtn = <button className="register-button">
         <ReactLoading type="bubbles" color="#fff" />
@@ -121,7 +122,7 @@ export default function Register() {
                 <div className="register-col1">
                     <div className="register-col1-info">
                         <div className="register-col1-title">
-                            <span>Information</span>
+                            <span>Thông tin</span>
                         </div>
                         <div className="register-col1-content">
                             <span>{informationText}</span>
@@ -132,12 +133,12 @@ export default function Register() {
                 <div className="register-col2">
                     <div className="register-col2-info">
                         <div className="register-col2-title">
-                            <span>Register form</span>
+                            <span>Đăng kí</span>
                         </div>
                         <form>
                             <div className="full-name-container">
                                 <div className="name-input">
-                                    <label for="name">First Name</label>
+                                    <label for="name">Họ</label>
                                     <input
                                         type="text"
                                         id="firstName"
@@ -148,7 +149,7 @@ export default function Register() {
                                 </div>
                                 {!isValidFirstName}
                                 <div className="fullname-input">
-                                    <label for="lastname">Last Name</label>
+                                    <label for="lastname">Tên</label>
                                     <input
                                         type="text"
                                         id="lastName"
@@ -161,7 +162,7 @@ export default function Register() {
                             </div>
                             <div className="email-container">
                                 <div className="email-input">
-                                    <label for="email">Your Email</label>
+                                    <label for="email">Email</label>
                                     <input
                                         type="email"
                                         id="email"
@@ -174,7 +175,7 @@ export default function Register() {
                             </div>
                             <div className="pw-container">
                                 <div className="pw-input">
-                                    <label for="pw">Password</label>
+                                    <label for="pw">Mật khẩu</label>
                                     <input
                                         type="password"
                                         id="password"
@@ -185,7 +186,7 @@ export default function Register() {
                                 </div>
                                 {!isValidPassword}
                                 <div className="confirm-pw-input">
-                                    <label for="confirm-pw">Confirm Password</label>
+                                    <label for="confirm-pw">Xác nhận mật khẩu</label>
                                     <input
                                         style={{ border: border }}
                                         type="password"
@@ -205,7 +206,7 @@ export default function Register() {
                                     value={checkBox}
                                     onChange={event => setCheckBox(event.target.checked)}
                                 />
-                                I agree to the <span> Terms and Conditions</span>
+                                Tôi đồng ý với <span> Điều khoản và Điều kiện</span>
                                 {!isValidCheckBox}
                             </label>
                         </form>
@@ -213,7 +214,7 @@ export default function Register() {
                     </div>
 
                     <div className="have-account">
-                        Have already an account ? <Link to="/login">Login here</Link>
+                        Đã có tài khoản ? <Link to="/login">Đăng nhập</Link>
                     </div>
                 </div>
             </div>

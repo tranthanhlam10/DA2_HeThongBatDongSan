@@ -1,5 +1,6 @@
 import React from 'react'
 import './FooterMiddle.css'
+import { Link } from 'react-router-dom'
 const colList = [
     {
         title: 'Nhà đất TP HCM',
@@ -257,7 +258,7 @@ export default function FooterMiddle() {
                                         item.items.map((item, index) => {
                                             return (
                                                 <li>
-                                                    <a href="#">
+                                                    <a href="/searchinglist">
                                                         {item.name}
                                                     </a>
                                                 </li>

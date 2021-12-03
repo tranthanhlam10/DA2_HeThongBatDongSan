@@ -68,7 +68,7 @@ export default function RealEstateManagement() {
             </td>
             <td colspan="2" className="admin-btn-function">
               <button className="btn--view-rem">
-                <a>
+                <a href="/admin/realestatedetail">
                   <span class="material-icons">pageview</span>
                   <span>View</span>
                 </a>
@@ -98,7 +98,7 @@ export default function RealEstateManagement() {
             </td>
             <td colspan="2" className="admin-btn-function">
               <button className="btn--view-rem">
-                <a>
+                <a href="/admin/realestatedetail">
                   <span class="material-icons">pageview</span>
                   <span>View</span>
                 </a>
@@ -128,7 +128,7 @@ export default function RealEstateManagement() {
             </td>
             <td colspan="2" className="admin-btn-function">
               <button className="btn--view-rem">
-                <a>
+                <a href="/admin/realestatedetail">
                   <span class="material-icons">pageview</span>
                   <span>View</span>
                 </a>
@@ -158,7 +158,7 @@ export default function RealEstateManagement() {
             </td>
             <td colspan="2" className="admin-btn-function">
               <button className="btn--view-rem">
-                <a>
+                <a href="/admin/realestatedetail">
                   <span class="material-icons">pageview</span>
                   <span>View</span>
                 </a>

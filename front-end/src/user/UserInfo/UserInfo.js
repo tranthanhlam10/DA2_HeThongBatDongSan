@@ -12,12 +12,12 @@ export default function UserInfo() {
         </div>
         <div className="des-infomation">
           <img
-            src="https://vcdn1-dulich.vnecdn.net/2021/07/16/8-1626444967.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=GfgGn4dNuKZexy1BGkAUNA"
+            src="https://64.media.tumblr.com/ab8f387b3e4d08d3a517b1f7766ace2b/tumblr_p4bm0eQ05h1wzkv79o1_1280.jpg"
             className="des-avatar"
           />
           <p className="des-name">Duy Bảo</p>
         </div>
-        <button className="des-btn-img">Thêm ảnh đạo diện</button>
+        <button className="des-btn-img">Thêm ảnh đại diện</button>
       </div>
       <div className="user-info-detail">
         <div className="detail-header">Thông tin cá nhân</div>

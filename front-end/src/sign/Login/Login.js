@@ -50,6 +50,7 @@ function Login(props) {
                     else {
                         setIsValidPass(true);
                         handleLoading();
+                        alert('Đăng nhập thành công')
                         props.LoginSucessful()
                     }
                 }
@@ -57,7 +58,7 @@ function Login(props) {
         }
     }
 
-    const loginBtn = <button onClick={validate}>Login</button>
+    const loginBtn = <button onClick={validate}>Đăng nhập</button>
 
     const loading = <button className="login-loading-btn" >
         <ReactLoading type="bubbles" color="#fff" />
@@ -76,7 +77,7 @@ function Login(props) {
                                 <input
                                     type="text"
                                     name="username"
-                                    placeholder="Username or Email"
+                                    placeholder="Tên đăng nhập"
                                     value={email}
                                     onChange={event => setEmail(event.target.value)}
                                 />
@@ -84,19 +85,19 @@ function Login(props) {
                             {!isValidEmail && <span className="error">{error}</span>}
                             <div class="input-group">
                                 <span class="material-icons">key</span>
-                                <input type="password" name="pass" placeholder="Password" value={password} onChange={event => setPassword(event.target.value)} />
+                                <input type="password" name="pass" placeholder="Mật khẩu" value={password} onChange={event => setPassword(event.target.value)} />
                             </div>
                             {!isValidPass && <span className="error">{error}</span>}
                             <div class="option">
                                 <div class="remember">
                                     <input type="checkbox" name="remember" value="remember" />
-                                    <label for="remember">Remember me?</label>
+                                    <label for="remember">Ghi nhớ đăng nhập?</label>
                                 </div>
-                                <a href="#">Forgot password?</a>
+                                <a href="#">Quên mật khẩu?</a>
                             </div>
                             {isLoading ? loading : loginBtn}
                             <p>
-                                <span>or Login with</span>
+                                <span>hoặc đăng nhập bằng</span>
                             </p>
                         </form>
                         <ul class="login-with-group">
@@ -117,8 +118,8 @@ function Login(props) {
                             </li>
                         </ul>
                         <p class="sign-up">
-                            Don't have an account?
-                            <Link to="/register"> Sign up</Link>
+                            Không có tài khoản?
+                            <Link to="/register"> Đăng kí</Link>
                         </p>
                     </div>
                 </div>

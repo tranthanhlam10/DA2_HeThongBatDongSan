@@ -139,7 +139,7 @@ export default function RealEstateInfo() {
                             <p className="re-detail-row-title">
                                 Loại tin đăng:
                             </p>
-                            <p>Bán nhà</p>
+                            <p>Bán chung cư</p>
                         </li>
                         <li>
                             <p className="re-detail-row-title">
@@ -171,7 +171,7 @@ export default function RealEstateInfo() {
                             <p className="re-detail-row-title">
                                 Pháp lý:
                             </p>
-                            <p>abcxyz</p>
+                            <p>Hợp pháp</p>
                         </li>
                     </ul>
                 </div>
@@ -186,13 +186,13 @@ export default function RealEstateInfo() {
                             <p className="re-detail-row-title">
                                 Tên dự án:
                             </p>
-                            <p>Nhà abcxyz</p>
+                            <p>Chung cư Jewelry</p>
                         </li>
                         <li>
                             <p className="re-detail-row-title">
                                 Chủ đầu tư:
                             </p>
-                            <p>Biên Hòa, Đồng Nai</p>
+                            <p>Team 4</p>
                         </li>
                     </ul>
                 </div>

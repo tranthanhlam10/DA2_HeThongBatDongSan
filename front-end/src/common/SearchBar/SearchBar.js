@@ -178,7 +178,7 @@ export default function SearchBar() {
     e.preventDefault()
     setIsLoading(true)
     setTimeout(() => {
-      history.push('/searchinglist')
+      window.location.reload();
     }, 3000)
   }
 

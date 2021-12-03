@@ -4,6 +4,7 @@
   border: 2px solid black;
   border-radius: 5px;
   padding: 1rem;
+  background: white;
 }
 
 .admin-usm-heading {
@@ -19,10 +20,14 @@
 .admin-usm-signout {
   font-weight: bold;
   font-size: 24px;
-  border-radius: 0.5rem;
-  background-color: red;
+  border-radius: 10px;
+  border: 1px solid #a18474;
   padding: 2px;
   cursor: pointer;
+}
+.admin-usm-signout:hover {
+  color: #635353;
+  background: #f2f2f2;
 }
 .admin-usm-signout > a {
   display: flex;
@@ -105,24 +110,3 @@ th {
   background-color: rgba(255, 255, 0, 0.575);
   cursor: pointer;
 }
-
-/* .btn--view-usm,
-.btn--delete-usm {
-  border: none;
-  padding: 1rem 2rem 1rem 2rem;
-}
-.btn--view-usm {
-  background-color: #1374d698;
-  margin-right: 0.5rem;
-}
-.btn--view-usm:hover {
-  background-color: #1374d6b2;
-  cursor: pointer;
-}
-.btn--delete-usm {
-  background-color: rgba(255, 0, 0, 0.623);
-}
-.btn--delete-usm:hover {
-  background-color: rgba(255, 0, 0, 0.712);
-  cursor: pointer;
-} */

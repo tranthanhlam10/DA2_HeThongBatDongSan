@@ -60,7 +60,7 @@ export default function ProjectManagement() {
             </td>
             <td colspan="2" className="admin-btn-function">
               <button className="btn--view-rem">
-                <a>
+                <a href="/admin/projectdetail">
                   <span class="material-icons">pageview</span>
                   <span>View</span>
                 </a>
@@ -86,7 +86,7 @@ export default function ProjectManagement() {
             </td>
             <td colspan="2" className="admin-btn-function">
               <button className="btn--view-rem">
-                <a>
+                <a href="/admin/projectdetail">
                   <span class="material-icons">pageview</span>
                   <span>View</span>
                 </a>
@@ -112,7 +112,7 @@ export default function ProjectManagement() {
             </td>
             <td colspan="2" className="admin-btn-function">
               <button className="btn--view-rem">
-                <a>
+                <a href="/admin/projectdetail">
                   <span class="material-icons">pageview</span>
                   <span>View</span>
                 </a>
@@ -138,7 +138,7 @@ export default function ProjectManagement() {
             </td>
             <td colspan="2" className="admin-btn-function">
               <button className="btn--view-rem">
-                <a>
+                <a href="/admin/projectdetail">
                   <span class="material-icons">pageview</span>
                   <span>View</span>
                 </a>

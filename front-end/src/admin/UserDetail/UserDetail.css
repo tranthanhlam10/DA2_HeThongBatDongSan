@@ -7,6 +7,7 @@
 .admin-usd-content {
   flex: 1;
   text-align: center;
+  background: white;
 }
 .admin-usd-header {
   margin-bottom: 1rem;
@@ -27,12 +28,72 @@
   align-items: center;
   margin-top: 3rem;
 }
-.infor:not(:last-child) {
-  padding-bottom: 2rem;
+/*CSS cho thẻ tên */
+.admin-usd-information {
+  display: flex;
+  flex-direction: column;
+}
+.admin-usd-detail-name {
+  display: flex;
+  margin-bottom: 20px;
+}
+.admin-usd-detail-name > p {
+  padding-right: 20px;
+  width: 200px;
+  font-weight: bold;
 }
 
-.infor {
+.admin-usd-detail-name > input {
+  width: 100%;
+  padding: 12px 20px;
+  margin-left: 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+/*CSS cho thẻ email*/
+
+.admin-usd-detail-email {
+  display: flex;
+  margin-bottom: 20px;
+}
+.admin-usd-detail-email > p {
+  padding-right: 20px;
+  width: 200px;
   font-weight: bold;
+}
+
+.admin-usd-detail-email > input {
+  width: 100%;
+  padding: 12px 20px;
+  margin-left: 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/*CSS cho thẻ địa chỉ*/
+
+.admin-usd-detail-address {
+  display: flex;
+  margin-bottom: 20px;
+}
+.admin-usd-detail-address > p {
+  padding-right: 20px;
+  width: 200px;
+  font-weight: bold;
+}
+
+.admin-usd-detail-address > input {
+  width: 100%;
+  padding: 12px 20px;
+  margin-left: 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 .admin-usd-moreinfo {
   padding: 2rem;
@@ -46,6 +107,11 @@
 .re-description {
   margin-top: 2rem;
   font-weight: bold;
+}
+
+.re-description > li {
+  padding: 20px;
+  font-weight: normal;
 }
 
 .action {
@@ -87,11 +153,3 @@
   justify-content: center;
   align-items: center;
 }
-
-/* .btn--refuse-usd {
-  background-color: rgb(216, 144, 11);
-}
-.btn--refuse-usd:hover {
-  background-color: rgb(216, 144, 11);
-  cursor: pointer;
-} */

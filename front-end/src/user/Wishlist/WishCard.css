@@ -28,6 +28,13 @@
 .wish-card-image {
   display: flex;
   align-self: stretch;
+  width: 278px;
+  height: 181px;
+}
+.wish-card-image > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .wish-card-name {
   font-size: 19px;
