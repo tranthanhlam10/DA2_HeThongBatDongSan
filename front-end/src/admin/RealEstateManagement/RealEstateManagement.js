@@ -7,7 +7,15 @@ export default function RealEstateManagement() {
   const [buttonPopup, setButtonPopup] = useState(false);
   return (
     <div className="admin-rem-content">
-      <h2 className="admin-rem-heading">ADMIN DASHBOARD</h2>
+      <div className="admin-rem-heading">
+        <h2>ADMIN DASHBOARD</h2>
+        <button className="admin-rem-signout">
+          <a href="/">
+            <span className="btn-signout">Đăng xuất</span>
+            <span class="material-icons">logout</span>
+          </a>
+        </button>
+      </div>
       <div className="admin-rem-table">
         <div className="admin-rem-table-content">
           <div></div>

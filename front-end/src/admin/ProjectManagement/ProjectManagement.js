@@ -7,7 +7,15 @@ export default function ProjectManagement() {
   const [buttonPopup, setButtonPopup] = useState(false);
   return (
     <div className="admin-pm-content">
-      <h2 className="admin-pm-heading">ADMIN DASHBOARD</h2>
+      <div className="admin-pm-heading">
+        <h2>ADMIN DASHBOARD</h2>
+        <button className="admin-pm-signout">
+          <a href="/">
+            <span className="btn-signout">Đăng xuất</span>
+            <span class="material-icons">logout</span>
+          </a>
+        </button>
+      </div>
       <div className="admin-pm-table">
         <div className="admin-pm-table-content">
           <div></div>

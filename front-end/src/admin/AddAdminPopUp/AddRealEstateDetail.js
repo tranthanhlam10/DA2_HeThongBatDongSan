@@ -42,7 +42,10 @@ export default function AddRealEstateDeatailDetail() {
       <div className="price-orient-re">
         <div>
           <h3 className="popup-re-price">Giá bán:</h3>
-          <input placeholder="Giá bán" className="popup-re-input-price"></input>
+          <input
+            placeholder="Nhập giá bán"
+            className="popup-re-input-price"
+          ></input>
         </div>
         <div>
           <h3 className="popup-re-orientation">Hướng nhà đất:</h3>
@@ -61,9 +64,9 @@ export default function AddRealEstateDeatailDetail() {
       </div>
       <div className="floor-room-re">
         <div>
-          <h3 className="popup-re-floor">Số tần: </h3>
+          <h3 className="popup-re-floor">Số tầng: </h3>
           <input
-            placeholder="Nhập số tần"
+            placeholder="Nhập số tầng"
             className="popup-re-input-floor"
           ></input>
         </div>

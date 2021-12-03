@@ -145,7 +145,7 @@
 .navbar-createFeed:hover {
   background-color: #ef5350;
 }
-.login-btn {
+.login-btn-container {
   border-right: 1px solid #fff;
   padding-right: 20px;
   margin-right: 20px;
@@ -213,4 +213,18 @@
   color: #fff;
   top: -5px;
   right: 8px;
+}
+.avatar{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.avatar > img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.header-avatar-container{
+  display: flex;
+  align-items: center;
 }

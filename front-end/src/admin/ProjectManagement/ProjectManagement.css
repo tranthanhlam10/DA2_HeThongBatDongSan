@@ -7,9 +7,26 @@
 }
 
 .admin-pm-heading {
-  font-weight: 200;
-  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 200px;
   margin: 1rem;
+}
+.admin-pm-heading > h2 {
+  font-weight: 200px;
+  font-size: 2rem;
+}
+.admin-pm-signout {
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 0.5rem;
+  background-color: red;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.admin-pm-signout > a {
+  display: flex;
 }
 
 .admin-pm-table {

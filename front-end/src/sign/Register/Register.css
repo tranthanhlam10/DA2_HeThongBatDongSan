@@ -16,7 +16,7 @@
     float: left;
     display: block;
     height: 700px;
-    background: #2d88ff;
+    background: rgba(207,162,103,1);
 }
 .register-col2{
     width: 50%;
@@ -41,7 +41,7 @@
  
 }
 .register-col2-title{
-    color: #2d88ff;
+    color: rgba(207,162,103,1);
     font-weight: bold;
     font-size: 30px;
     text-transform: uppercase;
@@ -88,12 +88,12 @@ label,input{
 }
 .register-agree > span{
     text-decoration: underline;
-    color: #2d88ff;
+    color: rgba(207,162,103,1);
     margin-left: 5px;
 }
 .register-button{
     color: #fff;
-    background: #2d88ff;
+    background: rgba(207,162,103,1);
     padding: 20px 50px;
     border-radius :5px;
     font-size: 18px;
@@ -106,7 +106,7 @@ label,input{
     align-items: center;
 }
 .register-button:hover {
-    background: rgba(45,136,225,0.9)
+    background: rgba(207,162,103,.8)
 }
 
 #firstName,#lastName,#password,#confirmPassword{
@@ -122,7 +122,7 @@ label,input{
     text-align: center;
 }
 .have-account > a{
-    color: #2d88ff !important;
+    color: rgba(207,162,103,1) !important;
     font-weight: 600;
-    border-bottom: 1px solid #2d88ff;
+    border-bottom: 1px solid rgba(207,162,103,1);
 }

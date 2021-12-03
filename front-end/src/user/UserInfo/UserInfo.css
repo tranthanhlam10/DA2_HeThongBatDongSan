@@ -1,0 +1,210 @@
+.user-info-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #dedede;
+}
+
+.user-info-description {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  padding: 10px;
+  height: 220px;
+  background: white;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.des-header > p {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.des-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+.des-name {
+  font-weight: 400px;
+}
+
+.des-btn-img {
+  margin-top: 20px;
+  padding: 8px;
+  background: #f2f2f2;
+  border: 1px solid #a18474;
+  border-radius: 8px;
+}
+.user-info-detail {
+  display: flex;
+  flex-direction: column;
+
+  padding: 10px;
+  width: 600px;
+  height: 565px;
+  position: relative;
+  background: white;
+  border-radius: 8px;
+}
+.detail-header {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+/* css cho phần tên*/
+.detail-name {
+  display: flex;
+  margin-bottom: 20px;
+}
+.detail-name > p {
+  padding-right: 20px;
+  width: 150px;
+}
+.detail-name > input {
+  width: 100%;
+  padding: 12px 20px;
+  margin-left: 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+/* css cho phần tên ở nhà*/
+.detail-rename {
+  display: flex;
+  margin-bottom: 20px;
+}
+.detail-rename > p {
+  padding-right: 20px;
+  width: 150px;
+}
+.detail-rename > input {
+  width: 100%;
+  padding: 12px 20px;
+  margin-left: 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+/* css cho phần địa chỉ*/
+.detail-address {
+  display: flex;
+  margin-bottom: 20px;
+}
+.detail-address > p {
+  padding-right: 20px;
+  width: 150px;
+}
+.detail-address > input {
+  width: 100%;
+  padding: 12px 20px;
+  margin-left: 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+/* css cho phần ngày sinh*/
+.detail-dob {
+  display: flex;
+  margin-bottom: 20px;
+}
+.detail-dob > p {
+  padding-right: 20px;
+  width: 150px;
+}
+.detail-dob > input {
+  width: 100%;
+  padding: 12px 20px;
+  margin-left: 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+/* css cho phần số điện thoại*/
+
+.detail-phone {
+  display: flex;
+  margin-bottom: 20px;
+}
+.detail-phone > p {
+  padding-right: 20px;
+  width: 150px;
+}
+.detail-phone > input {
+  width: 100%;
+  padding: 12px 20px;
+  margin-left: 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+/* css cho phần mail*/
+
+.detail-email {
+  display: flex;
+  margin-bottom: 20px;
+}
+.detail-email > p {
+  padding-right: 20px;
+  width: 150px;
+}
+.detail-email > input {
+  width: 100%;
+  padding: 12px 20px;
+  margin-left: 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* css cho phần pass*/
+.detail-password {
+  display: flex;
+  margin-bottom: 20px;
+}
+.detail-password > p {
+  padding-right: 20px;
+  width: 150px;
+}
+.detail-password > input {
+  width: 100%;
+  padding: 12px 20px;
+  margin-left: 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.detail-btn-save {
+  position: absolute;
+  left: 38%;
+  padding-right: 30px;
+  margin-top: 15px;
+  background: #f2f2f2;
+  border: 1px solid #a18474;
+  border-radius: 10px;
+  padding: 0px 8px 0px 8px;
+  height: 40px;
+  width: 150px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.detail-btn-save > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail-btn-save:hover {
+  color: #635353;
+  background: #f2f2f2;
+}

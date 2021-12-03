@@ -7,6 +7,7 @@ import SortedBy from './SortedBy'
 import FilterBlock from './FilterBlock'
 import HotLocation from './HotLocation'
 import NewProject from './NewProject'
+
 const filterList = [
     {
         filterTitle: 'TÌM THEO KHOẢNG GIÁ',
@@ -383,18 +384,24 @@ const newProjectList = [
 ]
 
 
-export default function SearchingList() {
+function SearchingList(props) {
     const [cards, setCards] = useState(cardList.slice(0, 100));
     const [pageNumber, setPageNumber] = useState(0)
+    const [numOfCard,setNumOfCart] = useState(0)
     const cardsPerPage = 10
     const pagesVisited = pageNumber * cardsPerPage
+    
+    
     const displayCards = cards
         .slice(pagesVisited, pagesVisited + cardsPerPage)
         .map((card) => {
             return (
-                <Card image={card.image} name={card.name} time={card.time} price={card.price} area={card.area} location={card.location} link={card.link} />
+                <div>
+                <Card  image={card.image} name={card.name} time={card.time} price={card.price} area={card.area} location={card.location} link={card.link} />
+                </div>
             );
         })
+    
     const pageCount = Math.ceil(cards.length / cardsPerPage)
     const changePage = ({ selected }) => {
         setPageNumber(selected);
@@ -405,6 +412,12 @@ export default function SearchingList() {
     const arrowLeft = <span class="material-icons">
         arrow_back_ios
     </span>
+
+    const callBackMethod= ()=>{
+     props.sendData(numOfCard);
+    }
+
+
     return (
         <div className="body-searching-list">
             <SearchBar />
@@ -446,3 +459,5 @@ export default function SearchingList() {
         </div>
     )
 }
+
+export default SearchingList

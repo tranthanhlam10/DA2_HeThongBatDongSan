@@ -21,9 +21,9 @@ export default function AdminLeftbar() {
           <Link className="admin-option" to="/admin/realestatemanagement">
             Quản lí nhà đất
           </Link>
-          <Link className="admin-option" to="/admin/realestatedetail">
+          {/* <Link className="admin-option" to="/admin/realestatedetail">
             Chi tiết nhà đất
-          </Link>
+          </Link> */}
         </div>
       </div>
       <div className="lb-project">
@@ -38,9 +38,9 @@ export default function AdminLeftbar() {
           <Link className="admin-option" to="/admin/projectmanagement">
             Quản lí dự án
           </Link>
-          <Link className="admin-option" to="/admin/projectdetail">
+          {/* <Link className="admin-option" to="/admin/projectdetail">
             Chi tiết dự án
-          </Link>
+          </Link> */}
         </div>
       </div>
       <div className="lb-account">
@@ -54,9 +54,9 @@ export default function AdminLeftbar() {
           <Link className="admin-option" to="/admin/usermanagement">
             Quản lí tài khoản
           </Link>
-          <Link className="admin-option" to="/admin/userdetail">
+          {/* <Link className="admin-option" to="/admin/userdetail">
             Chi tiết tài khoản
-          </Link>
+          </Link> */}
         </div>
       </div>
       <div className="lb-analytics">

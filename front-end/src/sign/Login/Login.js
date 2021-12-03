@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import "./Login.css";
-import { Link, Redirect, useHistory } from "react-router-dom";
-import Loading from '../../common/Loading'
-
+import { Link, useHistory } from "react-router-dom";
+import { LoginSucessful } from "../../actions";
+import { connect } from "react-redux";
 import ReactLoading from "react-loading";
 
-export default function Login() {
+function Login(props) {
     const history = useHistory();
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
@@ -18,7 +18,12 @@ export default function Login() {
     const handleLoading = () => {
         setIsLoading(true)
         setTimeout(() => {
-            history.push('/')
+            if (email === 'admin@gmail.com') {
+                history.push('/admin')
+            } else {
+                history.push('/')
+
+            }
         }, 3000)
     }
     const validate = (event) => {
@@ -45,6 +50,7 @@ export default function Login() {
                     else {
                         setIsValidPass(true);
                         handleLoading();
+                        props.LoginSucessful()
                     }
                 }
             }
@@ -120,3 +126,16 @@ export default function Login() {
         </div>
     );
 }
+
+const mapStateToProps = state => {
+    return {
+        _products: state._todoProduct,
+    };
+};
+function mapDispatchToProps(dispatch) {
+    return {
+        LoginSucessful: () => dispatch(LoginSucessful()),
+    };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Login);

@@ -3,6 +3,10 @@ import './Register.css'
 import { Link, Redirect, useHistory } from 'react-router-dom'
 import ReactLoading from "react-loading";
 export default function Register() {
+
+    const informationText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque posuere porta diam eget laoreet. Duis auctor, nisi ac auctor imperdiet, mi ligula ultrices ex, sed malesuada erat ex eget metus. Phasellus sed condimentum erat. Etiam nulla quam, aliquet sit amet pretium in, eleifend pretium massa. Fusce porta maximus tempor. Cras quis efficitur ante. Sed maximus nulla sit amet odio placerat mollis. Vestibulum quis tincidunt enim.Aenean porta dolor ut nisi consequat aliquet.Integer varius condimentum lacus"
+
+
     const history = useHistory();
 
     const [firstName, setFirstName] = useState();
@@ -18,13 +22,20 @@ export default function Register() {
     const [isValidPassword, setIsValidPassword] = useState(true);
     const [isValidconfirmPassword, setIsValidConfirmPassword] = useState(true);
     const [isValidCheckBox, setIsValidCheckBox] = useState(true);
-
+    const [isLoading, setIsLoading] = useState(false)
     const [isValid, setIsValid] = useState(false)
 
     const [border, setBorder] = useState('1px solid #ccc')
     let regEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     function AlertDialog(text) {
         alert(`${text}`);
+    }
+
+    const handleLoading = () => {
+        setIsLoading(true)
+        setTimeout(() => {
+            history.push('/login')
+        }, 3000)
     }
 
     const validate = (event) => {
@@ -77,13 +88,15 @@ export default function Register() {
                                 }
                                 else {
                                     setIsValidCheckBox(true)
-                                    setIsValid(true)
+
                                     if (password !== confirmPassword) {
                                         AlertDialog('Xác nhận mật khẩu không khớp')
                                         setBorder('1px solid red')
                                     }
                                     else {
                                         setBorder('1px solid #ccc')
+                                        setIsValid(true)
+                                        handleLoading()
                                     }
                                 }
                             }
@@ -111,9 +124,7 @@ export default function Register() {
                             <span>Information</span>
                         </div>
                         <div className="register-col1-content">
-                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque posuere porta diam eget laoreet. Duis auctor, nisi ac auctor imperdiet, mi ligula ultrices ex, sed malesuada erat ex eget metus. Phasellus sed condimentum erat. Etiam nulla quam, aliquet sit amet pretium in, eleifend pretium massa. Fusce porta maximus tempor. Cras quis efficitur ante. Sed maximus nulla sit amet odio placerat mollis. Vestibulum quis tincidunt enim.
-
-                                Aenean porta dolor ut nisi consequat aliquet. Integer varius condimentum lacus</span>
+                            <span>{informationText}</span>
                         </div>
 
                     </div>

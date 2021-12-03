@@ -7,7 +7,15 @@ export default function UserManagement() {
   const [buttonPopup, setButtonPopup] = useState(false);
   return (
     <div className="admin-usm-content">
-      <h2 className="admin-usm-heading">ADMIN DASHBOARD</h2>
+      <div className="admin-usm-heading">
+        <h2>ADMIN DASHBOARD</h2>
+        <button className="admin-usm-signout">
+          <a href="/">
+            <span className="btn-signout">Đăng xuất</span>
+            <span class="material-icons">logout</span>
+          </a>
+        </button>
+      </div>
       <div className="admin-usm-table">
         <div className="admin-usm-table-content">
           <div></div>

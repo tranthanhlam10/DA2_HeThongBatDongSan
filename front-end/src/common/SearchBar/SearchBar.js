@@ -171,15 +171,8 @@ export default function SearchBar() {
   const [displayWard, setDisplayWard] = useState('Tất cả')
   const [displayStreet, setDisplayStreet] = useState('Tất cả')
   const [isLoading, setIsLoading] = useState(false)
-  const handleReset = (e) => {
-    e.preventDefault()
-    setDisplayPrice('Tất cả')
-    setDisplayCity('Tất cả')
-    setDisplaySquare('Tất cả')
-    setDisplayProject('Tất cả')
-    setDisplayWard('Tất cả')
-    setDisplayStreet('Tất cả')
-  }
+
+  const [searchInputValue, setSearchInputValue] = useState('')
 
   const handleLoading = (e) => {
     e.preventDefault()
@@ -198,12 +191,30 @@ export default function SearchBar() {
     <ReactLoading type="bubbles" />
   </button>
 
+  const handleSearchInput = (e) => {
+    setSearchInputValue(e.target.value)
+  }
+
+  const resetSearchInput = () => {
+    setSearchInputValue('')
+  }
+  const handleReset = (e) => {
+    e.preventDefault()
+    setDisplayPrice('Tất cả')
+    setDisplayCity('Tất cả')
+    setDisplaySquare('Tất cả')
+    setDisplayProject('Tất cả')
+    setDisplayWard('Tất cả')
+    setDisplayStreet('Tất cả')
+    resetSearchInput()
+  }
+
   return (
     <div className="searchbar">
       <form action="" className="search-input">
         <div className="input-container">
           <span className="material-icons">search</span>
-          <input placeholder="Nhập địa điểm hoặc dự án..." type="text"></input>
+          <input placeholder="Nhập địa điểm hoặc dự án..." type="text" value={searchInputValue} onChange={handleSearchInput}></input>
         </div>
         <div className="option-container">
           <div className="option-label">

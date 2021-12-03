@@ -28,6 +28,8 @@ export default function HomeSearchBar() {
   const [iconArrowSquare, setIconArrowSquare] = useState(<span className="material-icons">expand_more</span>)
   const [iconArrowProject, setIconArrowProject] = useState(<span className="material-icons">expand_more</span>)
   const [iconArrowDirect, setIconArrowDirect] = useState(<span className="material-icons">expand_more</span>)
+
+  const [isAllowDropdown, setIsAllowDropdown] = useState(true)
   const handleLoading = () => {
     setIsLoading(true)
     setTimeout(() => {
@@ -69,84 +71,98 @@ export default function HomeSearchBar() {
   }
 
   const handleDisplay = () => {
-    if (display === 'none') {
+    if (display === 'none' && isAllowDropdown) {
       setDisplay('block')
       setIconArrow(<span className="material-icons">
         expand_less
       </span>)
-    } else {
+      setIsAllowDropdown(false)
+    }
+    if (display === 'block' && !isAllowDropdown) {
       setDisplay('none')
       setIconArrow(<span className="material-icons">
         expand_more
       </span>)
+      setIsAllowDropdown(true)
     }
   }
 
   const handleDisplayArea = () => {
-    if (areaOptionDisplay === 'none') {
+    if (areaOptionDisplay === 'none' && isAllowDropdown) {
       setAreaOptionDisplay('block')
       setIconArrowArea(<span className="material-icons">
         expand_less
       </span>)
-    } else {
+      setIsAllowDropdown(false)
+    }
+    if (areaOptionDisplay === 'block' && !isAllowDropdown) {
       setAreaOptionDisplay('none')
       setIconArrowArea(<span className="material-icons">
         expand_more
       </span>)
+      setIsAllowDropdown(true)
     }
   }
   const handleDisplayPrice = () => {
-    if (priceOptionDisplay === 'none') {
+    if (priceOptionDisplay === 'none' && isAllowDropdown) {
       setPriceOptionDisplay('block')
       setIconArrowPrice(<span className="material-icons">
         expand_less
       </span>)
-    } else {
+      setIsAllowDropdown(false)
+    } if (priceOptionDisplay === 'block' && !isAllowDropdown) {
       setPriceOptionDisplay('none')
       setIconArrowPrice(<span className="material-icons">
         expand_more
       </span>)
+      setIsAllowDropdown(true)
     }
   }
   const handleDisplaySquare = () => {
-    if (squareOptionDisplay === 'none') {
+    if (squareOptionDisplay === 'none' && isAllowDropdown) {
       setSquareOptionDisplay('block')
       setIconArrowSquare(<span className="material-icons">
         expand_less
       </span>)
-    } else {
+      setIsAllowDropdown(false)
+    } if (squareOptionDisplay === 'block' && !isAllowDropdown) {
       setSquareOptionDisplay('none')
       setIconArrowSquare(<span className="material-icons">
         expand_more
       </span>)
+      setIsAllowDropdown(true)
     }
   }
 
   const handleDisplayProject = () => {
-    if (projectOptionDisplay === 'none') {
+    if (projectOptionDisplay === 'none' && isAllowDropdown) {
       setProjectOptionDisplay('block')
       setIconArrowProject(<span className="material-icons">
         expand_less
       </span>)
-    } else {
+      setIsAllowDropdown(false)
+    } if (projectOptionDisplay === 'block' && !isAllowDropdown) {
       setProjectOptionDisplay('none')
       setIconArrowProject(<span className="material-icons">
         expand_more
       </span>)
+      setIsAllowDropdown(true)
     }
   }
 
   const handleDisplayDirect = () => {
-    if (directOptionDisplay === 'none') {
+    if (directOptionDisplay === 'none' && isAllowDropdown) {
       setDirectOptionDisplay('block')
       setIconArrowDirect(<span className="material-icons">
         expand_less
       </span>)
-    } else {
+      setIsAllowDropdown(false)
+    } if (directOptionDisplay === 'block' && !isAllowDropdown) {
       setDirectOptionDisplay('none')
       setIconArrowDirect(<span className="material-icons">
         expand_more
       </span>)
+      setIsAllowDropdown(true)
     }
   }
   const typeReList = [

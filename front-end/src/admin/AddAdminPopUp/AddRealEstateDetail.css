@@ -49,6 +49,7 @@
 .price-orient-re {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
 }
 .popup-re-input-price {
   width: 80%;
@@ -103,7 +104,7 @@
   box-sizing: border-box;
 }
 .popup-re-input-img {
-  width: 100%;
+  width: 80%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;

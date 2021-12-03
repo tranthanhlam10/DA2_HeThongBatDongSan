@@ -3,7 +3,7 @@ import "./Header.css";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import heart from "../assets/heart.png";
-
+import { connect } from 'react-redux'
 const navbarItems = [
   {
     displayName: "Nhà đất bán",
@@ -114,8 +114,14 @@ const navbarItems = [
     dropDownItems: [],
   },
 ];
+const avatarLoginSucessful = <div className="header-avatar-container">
+  <div className="avatar">
+    <img src="https://64.media.tumblr.com/ab8f387b3e4d08d3a517b1f7766ace2b/tumblr_p4bm0eQ05h1wzkv79o1_1280.jpg" />
+  </div>
+  <span>Luong Duy Bao</span>
+</div>
+function Header(props) {
 
-export default function Header() {
   return (
     <div classname="header-info-container">
       <div className="navbar-info">
@@ -130,9 +136,10 @@ export default function Header() {
           </li>
         </ul>
         <ul className="info-right">
-          <li>
-            <a href="/login" className="login-btn">
-              Đăng nhập
+          <li className="login-btn-container">
+            <a href="/login">
+              {props.isLogin ? avatarLoginSucessful : 'Đăng nhập'}
+
             </a>
           </li>
           <li>
@@ -182,7 +189,7 @@ export default function Header() {
                 </span>
               </div>
             </div>
-            <div className="num-of-wishlist">1</div>
+            {props.numberCart === 0 ? '' : <div className="num-of-wishlist">{props.numberCart}</div>}
           </li>
           <li>
             <Link to="/post" className="navbar-createFeed post-btn">
@@ -195,3 +202,10 @@ export default function Header() {
     </div>
   );
 }
+const mapStateToProps = state => {
+  return {
+    isLogin: state._todoProduct.isLogin,
+    numberCart: state._todoProduct.numberCart
+  }
+}
+export default connect(mapStateToProps, null)(Header)

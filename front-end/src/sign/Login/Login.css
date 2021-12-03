@@ -55,7 +55,7 @@
     color: #ccc;
   }
   .login-form > button {
-    background-color: #9146ff;
+    background: #cfa267;
     border: none;
     color: #fff;
     width: 100%;
@@ -65,7 +65,7 @@
     border-radius: 5px;
   }
   .login-form > button:hover {
-    background-color: #7d32eb;
+    background: rgba(207,162,103,.8);
   }
   .login-form > p1 > span {
     opacity: 0.7;
@@ -130,12 +130,11 @@
     font-family: sans-serif;
   }
   .sign-up > a {
-    color: #9146ff;
-    text-decoration: none;
+    color: #cfa267 !important;
+
+    text-decoration: underline !important;
   }
-  .sign-up > a:hover {
-    text-decoration: underline;
-  }
+
   
   .option {
     display: flex;
@@ -153,7 +152,7 @@
   }
   .option > a:hover {
     text-decoration: underline;
-    color: #9146ff;
+    color: #cfa267;
   }
   .remember {
     display: flex;
