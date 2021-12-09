@@ -48,13 +48,13 @@ export default function ProjectDetail() {
             Landmark 81).
           </p>
           <div className="action">
-            <button className="btn--save-pd">
+            <button className="btn--save-pd" onClick={SaveNofication}>
               <a>
                 <span class="material-icons">archive</span>
                 <p>Lưu</p>
               </a>
             </button>
-            <button className="btn--delete-pd">
+            <button className="btn--delete-pd" onClick={DeleteNofication}>
               <a>
                 <span class="material-icons">delete</span>
                 <p>Xóa</p>
@@ -65,4 +65,12 @@ export default function ProjectDetail() {
       </div>
     </div>
   );
+}
+
+function DeleteNofication() {
+  alert("Xóa thành công");
+}
+
+function SaveNofication() {
+  alert("Lưu thành thành công");
 }

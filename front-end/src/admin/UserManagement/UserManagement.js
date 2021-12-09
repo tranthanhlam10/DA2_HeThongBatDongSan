@@ -75,7 +75,7 @@ export default function UserManagement() {
                 </a>
               </button>
 
-              <button className="btn--delete-rem">
+              <button className="btn--delete-rem" onClick={DeleteNofication}>
                 <a>
                   <span class="material-icons">delete</span>
                   <span>Delete</span>
@@ -106,7 +106,7 @@ export default function UserManagement() {
                 </a>
               </button>
 
-              <button className="btn--delete-rem">
+              <button className="btn--delete-rem" onClick={DeleteNofication}>
                 <a>
                   <span class="material-icons">delete</span>
                   <span>Delete</span>
@@ -137,7 +137,7 @@ export default function UserManagement() {
                 </a>
               </button>
 
-              <button className="btn--delete-rem">
+              <button className="btn--delete-rem" onClick={DeleteNofication}>
                 <a>
                   <span class="material-icons">delete</span>
                   <span>Delete</span>
@@ -168,7 +168,7 @@ export default function UserManagement() {
                 </a>
               </button>
 
-              <button className="btn--delete-rem">
+              <button className="btn--delete-rem" onClick={DeleteNofication}>
                 <a>
                   <span class="material-icons">delete</span>
                   <span>Delete</span>
@@ -180,4 +180,8 @@ export default function UserManagement() {
       </div>
     </div>
   );
+}
+
+function DeleteNofication() {
+  alert("Xóa thành công");
 }

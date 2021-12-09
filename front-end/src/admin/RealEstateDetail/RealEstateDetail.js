@@ -45,19 +45,19 @@ export default function RealEstateDetail() {
           </p>
 
           <div className="action">
-            <button className="btn--accept-red">
+            <button className="btn--accept-red" onClick={ApproveNofication}>
               <a>
                 <span class="material-icons">check_circle</span>
                 <p>Duyệt</p>
               </a>
             </button>
-            <button className="btn--refuse-red">
+            <button className="btn--refuse-red" onClick={RefuseNofication}>
               <a>
                 <span class="material-icons">do_disturb_on</span>
                 <p>Từ chối</p>
               </a>
             </button>
-            <button className="btn--delete-red">
+            <button className="btn--delete-red" onClick={DeleteNofication}>
               <a>
                 <span class="material-icons">delete</span>
                 <p>Xóa</p>
@@ -68,4 +68,16 @@ export default function RealEstateDetail() {
       </div>
     </div>
   );
+}
+
+function ApproveNofication() {
+  alert("Phê duyệt thành công");
+}
+
+function RefuseNofication() {
+  alert("Từ chối thành công");
+}
+
+function DeleteNofication() {
+  alert("Xóa thành công");
 }

@@ -3,6 +3,7 @@ import "./ProjectManagement.css";
 import { useState } from "react";
 import PopUpAdd from "../AddAdminPopUp/PopUpAdd.js";
 import AddProjectDetail from "../AddAdminPopUp/AddProjectDetail";
+
 export default function ProjectManagement() {
   const [buttonPopup, setButtonPopup] = useState(false);
   return (
@@ -66,7 +67,7 @@ export default function ProjectManagement() {
                 </a>
               </button>
 
-              <button className="btn--delete-rem">
+              <button className="btn--delete-rem" onClick={DeleteNofication}>
                 <a>
                   <span class="material-icons">delete</span>
                   <span>Delete</span>
@@ -92,7 +93,7 @@ export default function ProjectManagement() {
                 </a>
               </button>
 
-              <button className="btn--delete-rem">
+              <button className="btn--delete-rem" onClick={DeleteNofication}>
                 <a>
                   <span class="material-icons">delete</span>
                   <span>Delete</span>
@@ -118,7 +119,7 @@ export default function ProjectManagement() {
                 </a>
               </button>
 
-              <button className="btn--delete-rem">
+              <button className="btn--delete-rem" onClick={DeleteNofication}>
                 <a>
                   <span class="material-icons">delete</span>
                   <span>Delete</span>
@@ -144,7 +145,7 @@ export default function ProjectManagement() {
                 </a>
               </button>
 
-              <button className="btn--delete-rem">
+              <button className="btn--delete-rem" onClick={DeleteNofication}>
                 <a>
                   <span class="material-icons">delete</span>
                   <span>Delete</span>
@@ -156,4 +157,8 @@ export default function ProjectManagement() {
       </div>
     </div>
   );
+}
+
+function DeleteNofication() {
+  alert("Xóa thành công");
 }

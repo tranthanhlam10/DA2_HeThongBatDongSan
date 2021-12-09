@@ -22,7 +22,7 @@ const hotCardList = [
     juridical: "Sổ đỏ",
     areainfo: "2,500m2",
     img: anhdemo1,
-    link: '/realestate'
+    link: "/realestate",
   },
   {
     price: "2,2 Tỷ/Căn",
@@ -31,7 +31,7 @@ const hotCardList = [
     juridical: "Sổ hồng",
     areainfo: "2,500m2",
     img: anhdemo2,
-    link: '/realestate'
+    link: "/realestate",
   },
   {
     price: "1,4 Tỷ/Căn",
@@ -40,7 +40,7 @@ const hotCardList = [
     juridical: "Sổ đỏ",
     areainfo: "2,500m2",
     img: anhdemo3,
-    link: '/realestate'
+    link: "/realestate",
   },
   {
     price: "1,8 Tỷ/Căn",
@@ -49,7 +49,7 @@ const hotCardList = [
     juridical: "Sở hữu lâu dài",
     areainfo: "2,500m2",
     img: anhdemo4,
-    link: '/realestate'
+    link: "/realestate",
   },
   {
     price: "Đang cập nhật",
@@ -58,7 +58,7 @@ const hotCardList = [
     juridical: "Sổ đỏ",
     areainfo: "2,500m2",
     img: anhdemo5,
-    link: '/realestate'
+    link: "/realestate",
   },
   {
     price: "50 triệu/m2",
@@ -67,7 +67,7 @@ const hotCardList = [
     juridical: "Sổ hồng",
     areainfo: "2,500m2",
     img: anhdemo6,
-    link: '/realestate'
+    link: "/realestate",
   },
 ];
 const prevIcon = `<img src=${prev} />`;
@@ -75,7 +75,7 @@ const nextIcon = `<img src=${next} />`;
 export default function HomeCarouselOwl() {
   return (
     <div className="owl-container">
-      <div className="owl-title">
+      <div className="owl-title-hot">
         <p>Đang mở bán</p>
       </div>
       <OwlCarousel
@@ -99,7 +99,7 @@ export default function HomeCarouselOwl() {
                 juridical={reCard.juridical}
                 areainfo={reCard.areainfo}
                 img={reCard.img}
-                link = {reCard.link}
+                link={reCard.link}
               />
             </div>
           );

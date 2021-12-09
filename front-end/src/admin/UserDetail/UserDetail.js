@@ -53,13 +53,13 @@ export default function UserDetail() {
             <li>Nova</li>
           </ul>
           <div className="action">
-            <button className="btn--accept-usd">
+            <button className="btn--accept-usd" onClick={SaveNofication}>
               <a>
                 <span class="material-icons">archive</span>
                 <p>Lưu</p>
               </a>
             </button>
-            <button className="btn--delete-usd">
+            <button className="btn--delete-usd" onClick={DeleteNofication}>
               <a>
                 <span class="material-icons">delete</span>
                 <p>Xóa</p>
@@ -70,4 +70,12 @@ export default function UserDetail() {
       </div>
     </div>
   );
+}
+
+function DeleteNofication() {
+  alert("Xóa thành công");
+}
+
+function SaveNofication() {
+  alert("Lưu thành thành công");
 }

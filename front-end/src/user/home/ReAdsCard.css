@@ -24,6 +24,7 @@
 
 .ads-price-area {
   display: flex;
+  justify-content: space-between;
   border-bottom: 1px dashed black;
   padding-bottom: 5px;
 }
@@ -55,6 +56,8 @@
 .ads-hot-card-price {
   margin-top: 12px;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .ads-card-price {
   font-weight: 500;
@@ -67,11 +70,16 @@
 .ads-card-address {
   font-size: 14px;
   font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .ads-hot-card-area {
   margin-top: 12px;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .ads-card-area {
   font-size: 14px;
@@ -85,4 +93,7 @@
 .ads-card-time {
   font-size: 14px;
   font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

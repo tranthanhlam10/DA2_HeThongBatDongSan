@@ -1,9 +1,16 @@
 .admin-usm-content {
-  flex: 1;
+  /* flex: 1;
   margin: 1rem;
   border: 2px solid black;
   border-radius: 5px;
   padding: 1rem;
+  background: white;*/
+  margin: 5px;
+  padding: 1rem;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-left: 5px;
   background: white;
 }
 
@@ -81,6 +88,7 @@
 .usm-search-button {
   border: none;
   background-color: rgba(216, 216, 216, 0.404);
+  cursor: pointer;
 }
 
 td {

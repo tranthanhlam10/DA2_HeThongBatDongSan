@@ -51,14 +51,14 @@ export default function AddUserDetail() {
       </div>
 
       <div className="add-reload-button">
-        <button className="add-us-btn">
+        <button className="add-us-btn" onClick={AddNofication}>
           {" "}
           <a>
             <span class="material-icons">add_circle</span>
             <span>Thêm </span>
           </a>
         </button>
-        <button className="reload-us-btn">
+        <button className="reload-us-btn" onClick={ReLoadNofication}>
           <a>
             <span class="material-icons">restart_alt</span>
             <span> Nhập lại </span>
@@ -67,4 +67,11 @@ export default function AddUserDetail() {
       </div>
     </>
   );
+}
+
+function AddNofication() {
+  alert("Thêm thành công");
+}
+function ReLoadNofication() {
+  alert("Bạn có muốn nhập lại không ?");
 }

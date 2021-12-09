@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.jpg";
+
 import { Link } from "react-router-dom";
 import heart from "../assets/heart.png";
 import { connect } from "react-redux";
@@ -153,7 +154,13 @@ function Header(props) {
         <ul className="header-col">
           <li className="logo-container">
             <Link to="/">
-              <img src={logo} alt="logo" className="logo-header" />
+              <img
+                src={logo}
+                alt="logo"
+                className="logo-header"
+                height="70px"
+                width="100px"
+              />
             </Link>
           </li>
           {navbarItems.map((item, index) => {

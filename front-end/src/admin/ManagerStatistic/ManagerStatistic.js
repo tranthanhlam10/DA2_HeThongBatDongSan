@@ -74,7 +74,15 @@ ChartJS.register(
 export default function ManagerStatistic() {
   return (
     <div className="admin-ana-content">
-      <h2 className="admin-rem-heading">ADMIN DASHBOARD</h2>
+      <div className="admin-ana-heading">
+        <h2>ADMIN DASHBOARD</h2>
+        <button className="admin-ana-signout">
+          <a href="/">
+            <span className="btn-signout">Đăng xuất</span>
+            <span class="material-icons">logout</span>
+          </a>
+        </button>
+      </div>
       <h1 className="ana-table-title">Thống kê</h1>
       <div className="admin-ana-info">
         <div className="admin-ana-info-re ">
@@ -115,7 +123,6 @@ export default function ManagerStatistic() {
       </div>
       <div className="admin-ana-chart-table">
         <div className="admin-ana-table">
-          {/* <div className="ana-table-header">Xem nhiều nhất</div> */}
           <table className="ana-table-content">
             <tr>
               <th>Xem nhiều nhất</th>

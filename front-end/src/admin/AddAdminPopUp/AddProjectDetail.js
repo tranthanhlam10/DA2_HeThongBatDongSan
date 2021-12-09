@@ -64,13 +64,13 @@ export default function AddProjectDetail() {
         ></input>
       </div>
       <div className="add-reload-button">
-        <button className="add-pj-btn">
+        <button className="add-pj-btn" onClick={AddNofication}>
           <a>
             <span class="material-icons">add_circle</span>
             <span>Thêm </span>
           </a>
         </button>
-        <button className="reload-pj-btn">
+        <button className="reload-pj-btn" onClick={ReLoadNofication}>
           <a>
             <span class="material-icons">restart_alt</span>
             <span> Nhập lại </span>
@@ -79,4 +79,11 @@ export default function AddProjectDetail() {
       </div>
     </>
   );
+}
+
+function AddNofication() {
+  alert("Thêm thành công");
+}
+function ReLoadNofication() {
+  alert("Bạn có muốn nhập lại không ?");
 }
