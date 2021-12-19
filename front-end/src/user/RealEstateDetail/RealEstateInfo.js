@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import './RealEstateInfo.css'
-import share from '../../assets/share.png'
-import heart from '../../assets/heart.png'
-
-export default function RealEstateInfo() {
+import { AddCart, DeleteCart } from "../../actions";
+import { connect } from "react-redux";
+function RealEstateInfo(props) {
     const text = "Mô tả chung cư Watermark, quận Cầu Giấy, nằm ngay trên mặt đường Lạc Long Quân, bên cạnh quần thể khu đô thị Tây Hồ. Cách trung tâm Hà Nội khoảng 7 km, tiếp giáp với khu đô thị Ciputra và khu đô thị mới Tây Hồ Tây. Đây là tòa căn hộ duy nhất đang được bán quanh khu vực Tây Hồ Tây. Watermark sở hữu không gian sống trong lành, thoáng mát, view đẹp bên cạnh hồ. Với những lợi thế vốn có về địa lý khu đất Watermark còn đảm bảo đầy đủ về mặt tiện ích và dịch vụ như: Việc thông xe cầu Nhật Tân giúp cho giao thông thuận tiện. Với nhiều tiện ích cao cấp tại khu vực xung quanh như: Khu tập gym và hồ bơi dành riêng cho cư dân Watermark, khu nhà hàng sang trọng, cafe và siêu thị, ….. Trường học Quốc tế, khu vui chơi giải trí công viên nước Hồ Tây, thung lũng hoa Hồ Tây, …."
     const [isTruncated, setIsTruncated] = useState(true)
     const [textSeeMore, setTextSeeMore] = useState('Xem thêm')
@@ -11,6 +10,10 @@ export default function RealEstateInfo() {
         expand_more
     </span>)
 
+    const [color, setColor] = useState("#000")
+    const [background, setBackground] = useState("#fff")
+    const [isClick, setIsClick] = useState(false)
+    const [isClickShare, setIsClickShare] = useState(false)
     const trunctedText = isTruncated ? `${text.slice(0, 150)}...` : text
 
     const handleClickSeeMore = () => {
@@ -28,6 +31,23 @@ export default function RealEstateInfo() {
                 expand_more
             </span>)
         }
+    }
+
+    const handleClickLike = (e) => {
+        e.preventDefault()
+
+        if (isClick) {
+            props.DeleteCart('abc');
+
+        } else {
+
+            props.AddCart('abc');
+        }
+        setIsClick(prevState => !prevState)
+    }
+    const handleClickShare = (e) => {
+        e.preventDefault()
+        setIsClickShare(prevState => !prevState)
     }
     return (
         <div className="re-info-container">
@@ -63,15 +83,19 @@ export default function RealEstateInfo() {
                             <p>2 phòng</p>
                         </li>
                         <li className="share-or-save share-icon">
-                            <button>
-                                <img src={share} className="re-detail-icon" />
+                            <button onClick={handleClickShare} style={isClickShare ? { color: "#fff", background: "#0572e6" } : { color: "#000", background: "#fff" }}>
+                                <span class="material-icons re-detail-icon">
+                                    share
+                                </span>
                                 <p>Chia sẻ</p>
                             </button>
-
                         </li>
                         <li className="share-or-save save-icon">
-                            <button>
-                                <img src={heart} className="re-detail-icon" />
+                            <button onClick={handleClickLike} style={isClick ? { color: "#fff", background: "red" } : { color: "#000", background: "#fff" }}>
+                                <span class="material-icons re-detail-icon">
+                                    favorite_border
+                                </span>
+
                                 <p>Yêu thích</p>
                             </button>
                         </li>
@@ -105,12 +129,7 @@ export default function RealEstateInfo() {
                             </p>
                             <p>77777</p>
                         </li>
-                        <li className="share-or-save save-icon">
-                            <button>
-                                <img src={heart} className="re-detail-icon" />
-                                <p>Yêu thích</p>
-                            </button>
-                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -201,3 +220,16 @@ export default function RealEstateInfo() {
         </div >
     )
 }
+
+const mapStateToProps = state => {
+    return {
+        _products: state._todoProduct,
+    };
+};
+function mapDispatchToProps(dispatch) {
+    return {
+        DeleteCart: item => dispatch(DeleteCart(item)),
+        AddCart: item => dispatch(AddCart(item)),
+    };
+}
+export default connect(mapStateToProps, mapDispatchToProps)(RealEstateInfo);

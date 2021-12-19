@@ -11,7 +11,7 @@ const adminRoutes = [
   {
     path: "",
     exact: true,
-    main: () => <ProjectManagement />, //http://localhost:3000/admin
+    main: () => <RealEstateManagement />, //http://localhost:3000/admin
   },
   {
     path: "/managestatistic",

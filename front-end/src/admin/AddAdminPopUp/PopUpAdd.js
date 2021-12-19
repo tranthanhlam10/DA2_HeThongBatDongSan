@@ -6,7 +6,9 @@ export default function PopUpAdd(props) {
     <div className="project-popup">
       <div className=" popup-inner">
         <button className="close-btn" onClick={() => props.setTrigger(false)}>
-          <span>Đóng</span>{" "}
+          <span class="material-icons">
+            close
+          </span>
         </button>
         {props.children}
       </div>

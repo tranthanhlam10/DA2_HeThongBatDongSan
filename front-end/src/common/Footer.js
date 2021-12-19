@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import logo from "../assets/logo.jpg";
+import logo from "../assets/logo.png";
 import certification from "../assets/certification.png";
 import location from "../assets/location.png";
 import phone from "../assets/phone.png";

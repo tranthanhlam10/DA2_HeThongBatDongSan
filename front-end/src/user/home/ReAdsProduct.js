@@ -10,6 +10,7 @@ const ReAdsProductList = [
     time: "1 ngày trước",
     areainfo: "1064,5 m2",
     img: "https://cdn.houseviet.vn/images/project/02112021/apec-mandala-retreats-mui-ne-s.jpg",
+    link: "realestate"
   },
   {
     price: "1,79 Tỷ",
@@ -18,6 +19,7 @@ const ReAdsProductList = [
     time: "16 phút trước",
     areainfo: "50 m2",
     img: "https://cdn.houseviet.vn/images/project/01112021/armena-khang-dien-s.jpg",
+    link: "realestate"
   },
   {
     price: "800 Triệu",
@@ -26,6 +28,7 @@ const ReAdsProductList = [
     time: "2 ngày trước",
     areainfo: "KXĐ",
     img: "https://cdn.houseviet.vn/images/project/03112021/diamond-square-bong-son-s.jpg",
+    link: "realestate"
   },
   {
     price: "Thỏa thuận",
@@ -34,6 +37,7 @@ const ReAdsProductList = [
     time: "một tuần trước",
     areainfo: "60m2",
     img: "https://cdn.houseviet.vn/images/project/05112021/tnr-grand-long-khanh-s.jpg",
+    link: "realestate"
   },
   {
     price: "4,5 Tỷ",
@@ -42,6 +46,7 @@ const ReAdsProductList = [
     time: "4 ngày trước",
     areainfo: "80m2",
     img: "https://cdn.houseviet.vn/images/project/20102021/the-beverly-s.jpg",
+    link: "realestate"
   },
   {
     price: "5 Tỷ",
@@ -50,6 +55,7 @@ const ReAdsProductList = [
     time: "5 ngày trước",
     areainfo: "100 m2",
     img: "https://cdn.houseviet.vn/images/project/10112021/khu-phuc-hop-la-casa-s.jpg",
+    link: "realestate"
   },
   {
     price: "4,161 tỷ",
@@ -58,6 +64,7 @@ const ReAdsProductList = [
     time: "1 ngày trước",
     areainfo: "57 m2",
     img: "https://cdn.houseviet.vn/images/project/13102021/diamond-smart-city-s.jpg",
+    link: "realestate"
   },
   {
     price: "2,8 Tỷ",
@@ -66,6 +73,7 @@ const ReAdsProductList = [
     time: "6 ngày trước",
     areainfo: "80 m2",
     img: "https://cdn.houseviet.vn/images/project/20102021/the-beverly-s.jpg",
+    link: "realestate"
   },
 ];
 export default function ReAdsProduct() {
@@ -85,6 +93,7 @@ export default function ReAdsProduct() {
                 time={reCard.time}
                 areainfo={reCard.areainfo}
                 img={reCard.img}
+                link={reCard.link}
               />
             </div>
           );

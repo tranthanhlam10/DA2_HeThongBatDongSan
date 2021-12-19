@@ -8,6 +8,13 @@
   background: white;
 }
 
+.admin-ana-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
 .admin-ana-heading {
   display: flex;
   justify-content: space-between;
@@ -39,7 +46,7 @@
 .ana-table-title {
   display: flex;
   justify-content: center;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 .admin-ana-info {
   margin-top: 10px;
@@ -47,7 +54,7 @@
   margin-right: 10px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 /*CSS cho mục bất động sản*/
 .admin-ana-info-re {
@@ -74,6 +81,8 @@
   margin-top: 10px;
   padding: 10px;
   background-color: #cfa267;
+  color: #fff;
+  cursor: pointer;
 }
 
 /*CSS cho mục dự án*/
@@ -100,6 +109,8 @@
   margin-top: 10px;
   padding: 10px;
   background-color: #cfa267;
+  color: #fff;
+  cursor: pointer;
 }
 
 /*CSS cho mục tài khoản*/
@@ -126,6 +137,8 @@
   margin-top: 10px;
   padding: 10px;
   background-color: #cfa267;
+  color: #fff;
+  cursor: pointer;
 }
 
 /*CSS cho mục biểu đồ*/
@@ -135,7 +148,7 @@
   margin-right: 10px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .admin-ana-table {
   display: flex;

@@ -19,9 +19,9 @@
 
 .ads-item {
   flex: 0 0 calc(100% / 4);
-  padding: 0 7.5 px;
+  padding: 0 7.5px;
   position: relative;
-  overflow: hidden;
+
   margin-bottom: 15px;
   display: flex;
   align-self: stretch;

@@ -7,7 +7,6 @@
   margin: 5px;
   padding: 1rem;
   width: 100%;
-  border: 2px solid black;
   border-radius: 5px;
   margin-left: 5px;
   background: white;
@@ -88,12 +87,13 @@
   border: none;
   background-color: rgba(216, 216, 216, 0.404);
   padding: 1rem 2rem 1rem 2rem;
+  border-radius: 10px;
 }
 
 .rem-search-button {
-  border: none;
-  background-color: rgba(216, 216, 216, 0.404);
+
   cursor: pointer;
+  
 }
 
 td {
@@ -125,7 +125,10 @@ th {
   overflow: hidden;
   margin: 1rem 0rem 2rem 0rem;
 }
-
+.rem-table-re-detail > tr > th{
+  color: #fff;
+  
+}
 .rem-btn-addre:hover {
   background-color: rgba(255, 255, 0, 0.575);
   cursor: pointer;
@@ -137,16 +140,18 @@ th {
 .btn--delete-rem {
   border: none;
   padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius:10px; 
 }
 .btn--view-rem {
   background-color: #1374d698;
-  margin-right: 0.5rem;
+  margin-right: 15px;
   display: flex;
 }
 .btn--view-rem > a {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff !important;
 }
 
 .btn--view-rem:hover {
@@ -161,6 +166,7 @@ th {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff !important;
 }
 .btn--delete-rem:hover {
   background-color: rgba(255, 0, 0, 0.712);

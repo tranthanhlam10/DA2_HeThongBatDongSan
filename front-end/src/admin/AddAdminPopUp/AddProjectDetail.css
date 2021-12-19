@@ -101,6 +101,7 @@
 }
 .add-pj-btn {
   background-color: rgba(255, 255, 0, 0.575);
+  border-radius: 10px;
   margin-right: 0.5rem;
 }
 .add-pj-btn:hover {
@@ -109,6 +110,7 @@
 }
 .reload-pj-btn {
   background-color: rgba(17, 231, 17, 0.479);
+  border-radius: 10px;
 }
 .reload-pj-btn:hover {
   background-color: rgba(17, 231, 17, 0.479);

@@ -9,7 +9,7 @@
   margin: 5px;
   padding: 1rem;
   width: 100%;
-  border: 2px solid black;
+
   border-radius: 5px;
   margin-left: 5px;
   background: white;
@@ -86,12 +86,13 @@
   border: none;
   background-color: rgba(216, 216, 216, 0.404);
   padding: 1rem 2rem 1rem 2rem;
+  border-radius: 10px;
 }
 
 .pm-search-button {
-  border: none;
-  background-color: rgba(216, 216, 216, 0.404);
+
   cursor: pointer;
+
 }
 
 td {
@@ -115,6 +116,9 @@ th {
   border-radius: 1rem;
   overflow: hidden;
   margin: 1rem 0rem 2rem 0rem;
+}
+.pm-table-re-detail > tr > th{
+  color: #fff;
 }
 
 .pm-btn-addre:hover {

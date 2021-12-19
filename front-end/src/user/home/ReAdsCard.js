@@ -2,18 +2,20 @@ import React from "react";
 import "./ReAdsCard.css";
 import heart1 from "../../assets/heart1.png";
 import share1 from "../../assets/share1.png";
-
+import {Link} from "react-router-dom"
 export default function ReAdsCard(props) {
   const { price, name, address, time, areainfo, img } = props;
   return (
     <div className="ads-card-info-container">
-      <a href="#" className="ads-card-info-link">
-        <div className="ads-card-img">
+      <div className="ads-card-info-link">
+       <a href={props.link}>
+       <div className="ads-card-img">
           <img src={img}></img>
         </div>
+       </a>
         <div className="ads-card-info">
           <div className="ads-card-title">
-            <p>{name}</p>
+            <a href={props.link}>{name}</a>
             <div className="ads-card-title-icon-container">
               <div className="ads-card-icon-heart">
                 <img src={heart1} />
@@ -47,7 +49,7 @@ export default function ReAdsCard(props) {
             </div>
           </div>
         </div>
-      </a>
+      </div>
     </div>
   );
 }

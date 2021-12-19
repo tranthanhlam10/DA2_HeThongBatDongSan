@@ -8,15 +8,6 @@ export default function ProjectManagement() {
   const [buttonPopup, setButtonPopup] = useState(false);
   return (
     <div className="admin-pm-content">
-      <div className="admin-pm-heading">
-        <h2>ADMIN DASHBOARD</h2>
-        <button className="admin-pm-signout">
-          <a href="/">
-            <span className="btn-signout">Đăng xuất</span>
-            <span class="material-icons">logout</span>
-          </a>
-        </button>
-      </div>
       <div className="admin-pm-table">
         <div className="admin-pm-table-content">
           <div></div>
@@ -62,7 +53,9 @@ export default function ProjectManagement() {
             <td colspan="2" className="admin-btn-function">
               <button className="btn--view-rem">
                 <a href="/admin/projectdetail">
-                  <span class="material-icons">pageview</span>
+                  <span class="material-icons">
+                    search
+                  </span>
                   <span>View</span>
                 </a>
               </button>
@@ -88,7 +81,7 @@ export default function ProjectManagement() {
             <td colspan="2" className="admin-btn-function">
               <button className="btn--view-rem">
                 <a href="/admin/projectdetail">
-                  <span class="material-icons">pageview</span>
+                  <span class="material-icons">search</span>
                   <span>View</span>
                 </a>
               </button>
@@ -114,7 +107,7 @@ export default function ProjectManagement() {
             <td colspan="2" className="admin-btn-function">
               <button className="btn--view-rem">
                 <a href="/admin/projectdetail">
-                  <span class="material-icons">pageview</span>
+                  <span class="material-icons">search</span>
                   <span>View</span>
                 </a>
               </button>
@@ -140,7 +133,7 @@ export default function ProjectManagement() {
             <td colspan="2" className="admin-btn-function">
               <button className="btn--view-rem">
                 <a href="/admin/projectdetail">
-                  <span class="material-icons">pageview</span>
+                  <span class="material-icons">search</span>
                   <span>View</span>
                 </a>
               </button>

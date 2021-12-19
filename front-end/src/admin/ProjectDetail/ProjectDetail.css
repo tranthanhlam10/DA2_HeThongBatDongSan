@@ -118,7 +118,7 @@
 }
 .btn--save-pd {
   background-color: rgba(17, 231, 17, 0.479);
-  display: flex;
+  border-radius: 10px;
 }
 .btn--save-pd > a {
   display: flex;
@@ -132,6 +132,7 @@
 }
 .btn--delete-pd {
   background-color: rgba(255, 0, 0, 0.623);
+  border-radius: 10px;
 }
 .btn--delete-pd > a {
   display: flex;

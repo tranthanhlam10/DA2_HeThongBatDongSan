@@ -65,6 +65,12 @@ export default function AdminLeftbar() {
           <span>Thống kê</span>
         </Link>
       </div>
+      <div className="lb-analytics">
+        <a className="admin-analysis" href="/">
+          <span class="material-icons">logout</span>
+          <span className="btn-signout">Đăng xuất</span>
+        </a>
+      </div>
     </div>
   );
 }

@@ -8,7 +8,6 @@
   margin: 5px;
   padding: 1rem;
   width: 100%;
-  border: 2px solid black;
   border-radius: 5px;
   margin-left: 5px;
   background: white;
@@ -83,11 +82,10 @@
   border: none;
   background-color: rgba(216, 216, 216, 0.404);
   padding: 1rem 2rem 1rem 2rem;
+  border-radius: 10px;
 }
 
 .usm-search-button {
-  border: none;
-  background-color: rgba(216, 216, 216, 0.404);
   cursor: pointer;
 }
 
@@ -113,7 +111,9 @@ th {
   overflow: hidden;
   margin: 1rem 0rem 2rem 0rem;
 }
-
+.usm-table-re-detail > tr > th{
+  color: #fff;
+}
 .usm-btn-addre:hover {
   background-color: rgba(255, 255, 0, 0.575);
   cursor: pointer;
