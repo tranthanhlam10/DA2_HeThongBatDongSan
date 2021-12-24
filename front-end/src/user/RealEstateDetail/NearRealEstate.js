@@ -2,39 +2,39 @@ import React from 'react'
 import './NearRealEstate.css'
 const nearItems = [
     {
-        displayName: "Astra City",
-        num: "19",
-        link: "",
+        displayName: "Hiệp Phú",
+        num: "5",
+        link: "/searchinglist",
     },
     {
-        displayName: "Astra City",
-        num: "19",
-        link: "",
+        displayName: "Long Thạnh Mỹ",
+        num: "3",
+        link: "/searchinglist",
     },
     {
-        displayName: "Astra City",
-        num: "19",
-        link: "",
+        displayName: "Phú Hữu",
+        num: "5",
+        link: "/searchinglist",
     },
     {
-        displayName: "Astra City",
-        num: "19",
-        link: "",
+        displayName: "Phước Bình",
+        num: "3",
+        link: "/searchinglist",
     },
     {
-        displayName: "Astra City",
-        num: "19",
-        link: "",
+        displayName: "Phướng Long A",
+        num: "4",
+        link: "/searchinglist",
     },
     {
-        displayName: "Astra City",
-        num: "19",
-        link: "",
+        displayName: "Phướng Long B",
+        num: "13",
+        link: "/searchinglist",
     },
     {
-        displayName: "Astra City",
-        num: "19",
-        link: "",
+        displayName: "Trường Thạnh",
+        num: "3",
+        link: "/searchinglist",
     },
 ]
 export default function NearRealEstate(props) {

@@ -1,6 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./UserDetail.css";
 export default function UserDetail() {
+  const [user, setUser] = useState("Nguyễn Thành Đạt")
+  const [email, setEmail] = useState("ntdat@gmail.com")
+  const [address, setAddress] = useState("Bà Rịa Vũng Tàu")
+  const [disable, setDisable] = useState(true)
+  const [background, setBackground] = useState("rgba(17, 231, 17, .2)")
+  const handleChangeUser = (e) => {
+    setUser(e.target.value)
+  }
+
+  const handleChangeEmail = (e) => {
+    setEmail(e.target.value)
+  }
+
+  const handleChangeAddress = (e) => {
+    setAddress(e.target.value)
+  }
+
+
   return (
     <div className="admin-usd-content">
       <h1 className="admin-usd-header">Chi tiết tài khoản</h1>
@@ -11,19 +29,21 @@ export default function UserDetail() {
               <p>Người dùng</p>
               <input
                 placeholder="Nhập tên người dùng"
-                value="Nguyễn Thành Đạt"
+                value={user}
+                onChange={(e) => { handleChangeUser(e); setDisable(false); setBackground("rgba(17, 231, 17, 0.685)") }}
               ></input>
             </div>
             <div className="admin-usd-detail-email">
               <p>Email</p>
               <input
                 placeholder="Nhập địa chỉ mail"
-                value="ntdat@gmail.com"
+                value={email}
+                onChange={(e) => { handleChangeEmail(e); setDisable(false); setBackground("rgba(17, 231, 17, 0.685)") }}
               ></input>
             </div>
             <div className="admin-usd-detail-address">
               <p>Địa chỉ</p>
-              <input placeholder="Nhập địa chỉ" value="Bà Rịa Vũng Tàu"></input>
+              <input placeholder="Nhập địa chỉ" value={address} onChange={(e) => { handleChangeAddress(e); setDisable(false); setBackground("rgba(17, 231, 17, 0.685)") }}></input>
             </div>
           </div>
           <img
@@ -53,7 +73,7 @@ export default function UserDetail() {
             <li>Nova</li>
           </ul>
           <div className="action">
-            <button className="btn--accept-usd" onClick={SaveNofication}>
+            <button className="btn--accept-usd" onClick={SaveNofication} disabled={disable} style={{ "background": background }}>
               <a>
                 <span class="material-icons">archive</span>
                 <p>Lưu</p>

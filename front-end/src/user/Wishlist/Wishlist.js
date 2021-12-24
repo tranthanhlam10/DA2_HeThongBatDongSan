@@ -6,22 +6,22 @@ import WishSort from "./WishSort";
 import { connect } from "react-redux";
 const Wishcardlist = [
   {
-    img: "https://abcland.vn/wp-content/uploads/2020/05/bat-dong-san-la-gi.jpg",
-    name: "Chính chủ cho thê căn hộ chung cư central field 219 trung kính, dt 70m2, giá 14tr/th",
-    time: "20 ngày trước",
-    price: "140 TRIỆU/THÁNG",
-    area: "700",
-    location: "Biên Hòa, Đồng Nai",
-    link: "/realestate",
+    img: 'https://pt123.cdn.static123.com/images/thumbs/900x600/fit/2020/03/21/a6_1584776036.jpg',
+    name: 'Cho thuê phòng trọ đường Liên Phường, Quận 9',
+    time: '20 ngày trước',
+    price: '9 TRIỆU/THÁNG',
+    area: '50',
+    location: 'Quận 9, thành phố Hồ Chí Minh',
+    link: '/realestate'
   },
   {
-    img: "https://luatduonggia.vn/wp-content/uploads/2015/08/dong-san-va-bat-dong-san-theo-quy-dinh-cua-phap-luat-viet-nam.jpeg",
-    name: "Chính chủ cho thê căn hộ chung cư central field 219 trung kính, dt 70m2, giá 14tr/th",
-    time: "6 ngày trước",
-    price: "100 TRIỆU/THÁNG",
-    area: "90",
-    location: "QUẬN NAM TỪ LIÊM, HÀ NỘI",
-    link: "/realestate",
+    img: 'https://phongnhatro.com/upload/files/images/2017/02/original/20170219_084324_4ddaff41da0fea15f676f931b76d7df3.jpg',
+    name: 'Chính chủ cho thuê phòng trọ quận 9',
+    time: '6 ngày trước',
+    price: '8.5 TRIỆU/THÁNG',
+    area: '30',
+    location: 'Quận 9, thành phố Hồ Chí Minh',
+    link: '/realestate'
   },
 ];
 

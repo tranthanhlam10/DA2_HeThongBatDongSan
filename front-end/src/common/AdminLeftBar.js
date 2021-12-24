@@ -5,7 +5,7 @@ export default function AdminLeftbar() {
   return (
     <div className="admin-left-bar">
       <div className="lb-header">
-        <a>
+        <a href="/">
           <span class="material-icons">home</span>
           <span>Trang chủ </span>
         </a>

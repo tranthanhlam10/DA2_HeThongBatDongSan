@@ -9,16 +9,16 @@ export default function DetailCarousel() {
     return (
         <Carousel>
             <div>
-                <img src="https://news.meeycdn.com/uploads/2020/10/1-chung-cu-cao-cap-gia-bao-nhieu.jpg" />
+                <img src="https://nhatro123.com/pictures/picfullsizes/2021/07/23/bkcucs1627011565.jpg" />
             </div>
             <div>
-                <img src="https://vesinhviethouse.com/wp-content/uploads/2021/04/ve-sinh-can-ho.jpg" />
+                <img src="https://duanromanplaza.vn/phong-tro-thu-duc-cho-tot/imager_1_18329_700.jpg" />
             </div>
             <div>
-                <img src="https://nhadatnhanh.vn/upload/news/phan-loai-can-ho-chung-cu.jpg" />
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXCv0d1h6TIj_jPJF1VfFB1Y2MLedf8d1gJw&usqp=CAU" />
             </div>
             <div>
-                <img src="https://cafefcdn.com/zoom/700_438/2020/2/26/bds123-mua-ban-can-ho-chung-cu1571218457-15826921471071088965807-crop-15826921545642145401569.jpg" />
+                <img src="https://nhatro123.com/pictures/picfullsizes/2021/11/01/fuyazr1635765963.jpg" />
             </div>
         </Carousel>
     )

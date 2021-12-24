@@ -20,7 +20,7 @@ export default function UserScreen() {
           <Route path="/wishlist">
             <Wishlist />
           </Route>
-          <Route path="/searchinglist">
+          <Route exact={true} path="/searchinglist">
             <SearchingList />
           </Route>
           <Route path="/realestate">

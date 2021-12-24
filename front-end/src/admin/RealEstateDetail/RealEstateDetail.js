@@ -57,12 +57,6 @@ export default function RealEstateDetail() {
                 <p>Từ chối</p>
               </a>
             </button>
-            <button className="btn--delete-red" onClick={DeleteNofication}>
-              <a>
-                <span class="material-icons">delete</span>
-                <p>Xóa</p>
-              </a>
-            </button>
           </div>
         </div>
       </div>

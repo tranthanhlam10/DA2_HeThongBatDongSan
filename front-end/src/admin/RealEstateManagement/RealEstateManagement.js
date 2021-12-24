@@ -26,7 +26,7 @@ export default function RealEstateManagement() {
             <AddRealEstateDetail />
           </PopUpAdd>
         </div>
-        <div className="rem-search-bar">
+        {/* <div className="rem-search-bar">
           <input
             type="search"
             placeholder="Tìm nhà đất"
@@ -35,7 +35,7 @@ export default function RealEstateManagement() {
           <button className="rem-search-button">
             <span className="material-icons">search</span>
           </button>
-        </div>
+        </div> */}
         <table className="rem-table-re-detail">
           <tr>
             <th>id</th>
@@ -61,15 +61,17 @@ export default function RealEstateManagement() {
             <td colspan="2" className="admin-btn-function">
               <button className="btn--view-rem">
                 <a href="/admin/realestatedetail">
-                  <span class="material-icons">pageview</span>
-                  <span>View</span>
+                  <span class="material-icons">
+                    search
+                  </span>
+                  <span>Xem</span>
                 </a>
               </button>
 
               <button className="btn--delete-rem" onClick={DeleteNofication}>
                 <a>
                   <span class="material-icons">delete</span>
-                  <span>Delete</span>
+                  <span>Xóa</span>
                 </a>
               </button>
             </td>
@@ -91,15 +93,17 @@ export default function RealEstateManagement() {
             <td colspan="2" className="admin-btn-function">
               <button className="btn--view-rem">
                 <a href="/admin/realestatedetail">
-                  <span class="material-icons">pageview</span>
-                  <span>View</span>
+                  <span class="material-icons">
+                    search
+                  </span>
+                  <span>Xem</span>
                 </a>
               </button>
 
               <button className="btn--delete-rem" onClick={DeleteNofication}>
                 <a>
                   <span class="material-icons">delete</span>
-                  <span>Delete</span>
+                  <span>Xóa</span>
                 </a>
               </button>
             </td>
@@ -121,15 +125,17 @@ export default function RealEstateManagement() {
             <td colspan="2" className="admin-btn-function">
               <button className="btn--view-rem">
                 <a href="/admin/realestatedetail">
-                  <span class="material-icons">pageview</span>
-                  <span>View</span>
+                  <span class="material-icons">
+                    search
+                  </span>
+                  <span>Xem</span>
                 </a>
               </button>
 
               <button className="btn--delete-rem" onClick={DeleteNofication}>
                 <a>
                   <span class="material-icons">delete</span>
-                  <span>Delete</span>
+                  <span>Xóa</span>
                 </a>
               </button>
             </td>
@@ -137,7 +143,7 @@ export default function RealEstateManagement() {
           <tr>
             <td>
               {" "}
-              <a href="/admin/realestatedetail">5</a>
+              <a href="/admin/realestatedetail">4</a>
             </td>
             <td>
               <a href="/admin/realestatedetail">Suối tiên</a>
@@ -151,15 +157,17 @@ export default function RealEstateManagement() {
             <td colspan="2" className="admin-btn-function">
               <button className="btn--view-rem">
                 <a href="/admin/realestatedetail">
-                  <span class="material-icons">pageview</span>
-                  <span>View</span>
+                  <span class="material-icons">
+                    search
+                  </span>
+                  <span>Xem</span>
                 </a>
               </button>
 
               <button className="btn--delete-rem" onClick={DeleteNofication}>
                 <a>
                   <span class="material-icons">delete</span>
-                  <span>Delete</span>
+                  <span>Xóa</span>
                 </a>
               </button>
             </td>

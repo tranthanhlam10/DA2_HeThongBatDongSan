@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './RealEstateInfo.css'
 import { AddCart, DeleteCart } from "../../actions";
 import { connect } from "react-redux";
+
 function RealEstateInfo(props) {
-    const text = "Mô tả chung cư Watermark, quận Cầu Giấy, nằm ngay trên mặt đường Lạc Long Quân, bên cạnh quần thể khu đô thị Tây Hồ. Cách trung tâm Hà Nội khoảng 7 km, tiếp giáp với khu đô thị Ciputra và khu đô thị mới Tây Hồ Tây. Đây là tòa căn hộ duy nhất đang được bán quanh khu vực Tây Hồ Tây. Watermark sở hữu không gian sống trong lành, thoáng mát, view đẹp bên cạnh hồ. Với những lợi thế vốn có về địa lý khu đất Watermark còn đảm bảo đầy đủ về mặt tiện ích và dịch vụ như: Việc thông xe cầu Nhật Tân giúp cho giao thông thuận tiện. Với nhiều tiện ích cao cấp tại khu vực xung quanh như: Khu tập gym và hồ bơi dành riêng cho cư dân Watermark, khu nhà hàng sang trọng, cafe và siêu thị, ….. Trường học Quốc tế, khu vui chơi giải trí công viên nước Hồ Tây, thung lũng hoa Hồ Tây, …."
+    const text = "Phù hợp với các bạn Sinh Viên, Người đi làm gần khu công nghệ cao, Quận 9 Tiện ích + gần chợ + ngân hàng + cây xăng Chính sách dịch vụ: * Điện : 3k/ ký * Nước : 20k/ khối * phí quản lý + rác + Wifi : FREE, 1PN riêng sẵn máy lạnh 15m2, gác lửng 2m không đụng đầu, Kệ bếp, tủ bếp rộng, toilet riêng, , Sân vườn mát mẻ, khu vực an ninh, gần chợ, không ngập úng, thuận tiện di chuyển CNC, Samsung , FPT, Nguyễn Duy Trinh "
     const [isTruncated, setIsTruncated] = useState(true)
     const [textSeeMore, setTextSeeMore] = useState('Xem thêm')
     const [icon, setIcon] = useState(<span className="material-icons">
@@ -49,38 +50,43 @@ function RealEstateInfo(props) {
         e.preventDefault()
         setIsClickShare(prevState => !prevState)
     }
+    useEffect(() => {
+        if (props.numberCart !== 0) {
+            setIsClick(true)
+        }
+    }, [])
     return (
         <div className="re-info-container">
             <div className="re-info-box">
                 <div className="re-detail-container">
                     <div className="re-detail-name-des">
-                        <p className="re-detail-title-box">Tên bất động sản</p>
-                        <p className="re-detail-des">Đây là căn hộ chung cư tại Hà Nội</p>
+                        <p className="re-detail-title-box">Cho thuê nhà trọ đường Liên Phường, Quận 9</p>
+                        <p className="re-detail-des">Đây là phòng trọ quận 9</p>
                     </div>
                     <ul className="re-detail-list re-detail-col-first">
                         <li>
                             <p className="re-detail-title">
                                 Mức giá
                             </p>
-                            <p>35 tỷ - 30 triệu/m2</p>
+                            <p>9 triệu/tháng</p>
                         </li>
                         <li>
                             <p className="re-detail-title">
                                 Diện tích
                             </p>
-                            <p>104 m2</p>
+                            <p>50 m2</p>
                         </li>
                         <li>
                             <p className="re-detail-title">
                                 Phòng ngủ
                             </p>
-                            <p>3 phòng</p>
+                            <p>2 phòng</p>
                         </li>
                         <li>
                             <p className="re-detail-title">
                                 Phòng toilet
                             </p>
-                            <p>2 phòng</p>
+                            <p>1 phòng</p>
                         </li>
                         <li className="share-or-save share-icon">
                             <button onClick={handleClickShare} style={isClickShare ? { color: "#fff", background: "#0572e6" } : { color: "#000", background: "#fff" }}>
@@ -158,26 +164,26 @@ function RealEstateInfo(props) {
                             <p className="re-detail-row-title">
                                 Loại tin đăng:
                             </p>
-                            <p>Bán chung cư</p>
+                            <p>Cho thuê nhà trọ</p>
                         </li>
                         <li>
                             <p className="re-detail-row-title">
                                 Địa chỉ:
                             </p>
-                            <p>Cầu Giấy, Hà Nội</p>
+                            <p>Quận 9, thành phố Hồ Chí Minh</p>
                         </li>
                         <li className="re-detail-room">
                             <div className="re-detail-bedroom">
                                 <p className="re-detail-row-title">
                                     Số phòng ngủ:
                                 </p>
-                                <p>3</p>
+                                <p>2</p>
                             </div>
                             <div>
                                 <p className="re-detail-row-title">
                                     Số phòng tắm/toilet:
                                 </p>
-                                <p>30</p>
+                                <p>1</p>
                             </div>
                         </li>
                         <li>
@@ -205,13 +211,13 @@ function RealEstateInfo(props) {
                             <p className="re-detail-row-title">
                                 Tên dự án:
                             </p>
-                            <p>Chung cư Jewelry</p>
+                            <p>Cho thuê nhà trọ quận 9</p>
                         </li>
                         <li>
                             <p className="re-detail-row-title">
                                 Chủ đầu tư:
                             </p>
-                            <p>Team 4</p>
+                            <p>Trần Thanh Lâm</p>
                         </li>
                     </ul>
                 </div>
@@ -224,6 +230,7 @@ function RealEstateInfo(props) {
 const mapStateToProps = state => {
     return {
         _products: state._todoProduct,
+        numberCart: state._todoProduct.numberCart,
     };
 };
 function mapDispatchToProps(dispatch) {

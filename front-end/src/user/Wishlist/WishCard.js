@@ -1,12 +1,12 @@
 import React from "react";
 import "./WishCard.css";
-
+import { Link } from 'react-router-dom'
 export default function WishCard(props) {
   const { img, name, price, area, time, location, link } = props;
 
   return (
     <div className="wish-card">
-      <a href={link} className="wish-card-info">
+      <Link to={link} className="wish-card-info">
         <div className="wish-card-image">
           <img src={img}></img>
         </div>
@@ -33,7 +33,7 @@ export default function WishCard(props) {
             </div>
           </div>
         </div>
-      </a>
+      </Link>
     </div>
   );
 }

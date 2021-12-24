@@ -11,6 +11,7 @@
 }
 .admin-pd-header {
   margin-bottom: 1rem;
+  padding-top: 13px;
 }
 .admin-pd-content-detail {
   display: flex;
@@ -36,6 +37,7 @@
 .admin-pd-detail-name {
   display: flex;
   margin-bottom: 20px;
+  align-items: center;
 }
 .admin-pd-detail-name > p {
   padding-right: 20px;
@@ -57,6 +59,7 @@
 .admin-pd-detail-owner {
   display: flex;
   margin-bottom: 20px;
+  align-items: center;
 }
 .admin-pd-detail-owner > p {
   padding-right: 20px;
@@ -79,6 +82,7 @@
 .admin-pd-detail-address {
   display: flex;
   margin-bottom: 20px;
+  align-items: center;
 }
 .admin-pd-detail-address > p {
   padding-right: 20px;
@@ -115,9 +119,12 @@
   border: none;
   padding: 1rem 2rem 1rem 2rem;
   margin-left: 2rem;
+  font-weight: bold;
+  color:#fff;
+  font-size: 16px;
 }
 .btn--save-pd {
-  background-color: rgba(17, 231, 17, 0.479);
+  background-color: rgba(17, 231, 17, 0.685);
   border-radius: 10px;
 }
 .btn--save-pd > a {
@@ -126,12 +133,11 @@
   align-items: center;
 }
 .btn--save-pd:hover {
-  background-color: rgba(17, 231, 17, 0.685);
-
+  background-color: rgba(17, 231, 17, 0.479);
   cursor: pointer;
 }
 .btn--delete-pd {
-  background-color: rgba(255, 0, 0, 0.623);
+  background-color: rgba(255, 0, 0, 0.712); 
   border-radius: 10px;
 }
 .btn--delete-pd > a {
@@ -141,6 +147,7 @@
 }
 
 .btn--delete-pd:hover {
-  background-color: rgba(255, 0, 0, 0.712);
+  background-color: rgba(255, 0, 0, 0.623);
+
   cursor: pointer;
 }

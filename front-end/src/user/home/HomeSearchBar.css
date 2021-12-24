@@ -177,6 +177,8 @@ iframe {
   display:flex;
   cursor: pointer;
   position: relative;
+  width: 182px;
+  justify-content: space-between;
 }
 .re-style-dropdown{
   position: absolute;
@@ -214,6 +216,7 @@ iframe {
   padding: 0 5px;
   margin-right: 10px;
   position: relative;
+  white-space: nowrap;
 }
 .option-search-dropdown{
   position: absolute;

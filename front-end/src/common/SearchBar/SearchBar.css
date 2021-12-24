@@ -16,7 +16,7 @@
     cursor: pointer;
     margin: 10px;
     border-left: 1px solid #dedede;
-    padding-left: 10px;
+    justify-content: center;
 }
 .search-btn:hover {
     background-color: #ef5350;

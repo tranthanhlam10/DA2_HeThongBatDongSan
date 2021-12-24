@@ -7,7 +7,7 @@
   background: white;*/
   margin: 5px;
   padding: 1rem;
-  width: 100%;
+  width: calc(100% - 216px);
   border-radius: 5px;
   margin-left: 5px;
   background: white;

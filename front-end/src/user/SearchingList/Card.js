@@ -11,9 +11,9 @@ function Card(props) {
     return (
         <div className="card-container">
             <div className="img-item">
-                <a href={link}>
+                <Link to={link}>
                     <img src={image} alt="img-bds"></img>
-                </a>
+                </Link>
 
                 <button
                     id="favorite"
@@ -50,7 +50,7 @@ function Card(props) {
             <div className="content-item">
                 {/* //tryền data tên vô đây */}
                 <div className="card-title">
-                    <a href={link}>{name}</a>
+                    <Link to={link}>{name}</Link>
                 </div>
                 <div className="card-time">
                     <span className="material-icons">schedule</span>

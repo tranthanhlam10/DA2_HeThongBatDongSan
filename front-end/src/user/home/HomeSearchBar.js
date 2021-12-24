@@ -22,6 +22,14 @@ export default function HomeSearchBar() {
   const [projectOptionDisplay, setProjectOptionDisplay] = useState("none");
   const [directOptionDisplay, setDirectOptionDisplay] = useState("none");
 
+  const [area, setArea] = useState("Toàn quốc")
+  const [type, setType] = useState("Loại bất động sản")
+  const [price, setPrice] = useState("Mức giá")
+  const [square, setSquare] = useState("Diện tích")
+  const [project, setProject] = useState("Dự án")
+  const [direct, setDirect] = useState("Hướng")
+
+
   const [iconArrow, setIconArrow] = useState(
     <span className="material-icons">expand_more</span>
   );
@@ -169,7 +177,7 @@ export default function HomeSearchBar() {
       displayName: "Căn hộ chung cư",
     },
     {
-      displayName: "Các loại nhà bán",
+      displayName: "Nhà trọ",
     },
     {
       displayName: "Nhà riêng",
@@ -222,28 +230,28 @@ export default function HomeSearchBar() {
       displayName: "Tất cả",
     },
     {
-      displayName: "Dưới 500 triệu",
+      displayName: "Dưới 5 triệu",
     },
     {
-      displayName: "500 -> 1 tỷ",
+      displayName: "5 -> 10 triệu",
+    },
+    {
+      displayName: "10 -> 50 triệu",
+    },
+    {
+      displayName: "50 -> 100 triệu",
+    },
+    {
+      displayName: "100 triệu -> 1 tỷ",
     },
     {
       displayName: "1 -> 2 tỷ",
     },
     {
-      displayName: "2 -> 3 tỷ",
+      displayName: "2 -> 5 tỷ",
     },
     {
-      displayName: "3 -> 5 tỷ",
-    },
-    {
-      displayName: "5 -> 7 tỷ",
-    },
-    {
-      displayName: "7 -> 10 tỷ",
-    },
-    {
-      displayName: "10 -> 20 tỷ",
+      displayName: "5 -> 10 tỷ",
     },
   ];
 
@@ -279,42 +287,42 @@ export default function HomeSearchBar() {
 
   const projectItems = [
     {
-      displayName: "Vinahomes Golden River",
+      displayName: "Vinahomes",
     },
     {
-      displayName: "Saigon Centre",
+      displayName: "Saigon",
     },
     {
-      displayName: "Dự án Masterise Ba Son",
+      displayName: "Masterise",
     },
     {
-      displayName: "The Grand Manhattan",
+      displayName: "Manhattan",
     },
   ];
   const directItems = [
     {
-      displayName: "Hướng Đông",
+      displayName: "Đông",
     },
     {
-      displayName: "Hướng Tây",
+      displayName: "Tây",
     },
     {
-      displayName: "Hướng Nam",
+      displayName: "Nam",
     },
     {
-      displayName: "Hướng Bắc",
+      displayName: "Bắc",
     },
     {
-      displayName: "Hướng Đông-Bắc",
+      displayName: "Đông-Bắc",
     },
     {
-      displayName: "Hướng Tây-Bắc",
+      displayName: "Tây-Bắc",
     },
     {
-      displayName: "Hướng Tây-Nam",
+      displayName: "Tây-Nam",
     },
     {
-      displayName: "Hướng Đông-Nam",
+      displayName: "Đông-Nam",
     },
   ];
   return (
@@ -346,13 +354,13 @@ export default function HomeSearchBar() {
         <div className="search-form">
           <div className="searching-bar">
             <div className="realestate-type-btn" onClick={handleDisplay}>
-              <div className="option-box">Loại bất động sản</div>
+              <div className="option-box">{type}</div>
               <div className="option-label">{iconArrow}</div>
               <div className="re-style-dropdown" style={{ display: display }}>
                 <ul className="re-style-list">
                   {typeReList.map((item, index) => {
                     return (
-                      <li className="re-style-item" key={index}>
+                      <li className="re-style-item" key={index} onClick={() => setType(item.displayName)}>
                         {item.displayName}
                       </li>
                     );
@@ -375,7 +383,7 @@ export default function HomeSearchBar() {
 
           <div className="searching-option">
             <div className="home-searchbar-option" onClick={handleDisplayArea}>
-              <span>Toàn quốc</span>
+              <span>{area}</span>
               {iconArrowArea}
               <div
                 className="option-search-dropdown"
@@ -384,7 +392,7 @@ export default function HomeSearchBar() {
                 <ul className="option-search-list">
                   {cityItems.map((item, index) => {
                     return (
-                      <li className="option-search-item" key={index}>
+                      <li className="option-search-item" key={index} onClick={() => setArea(item.displayName)}>
                         {item.displayName}
                       </li>
                     );
@@ -393,7 +401,7 @@ export default function HomeSearchBar() {
               </div>
             </div>
             <div className="home-searchbar-option" onClick={handleDisplayPrice}>
-              <span>Mức giá</span>
+              <span>{price}</span>
               {iconArrowPrice}
               <div
                 className="option-search-dropdown"
@@ -402,7 +410,7 @@ export default function HomeSearchBar() {
                 <ul className="option-search-list">
                   {priceItems.map((item, index) => {
                     return (
-                      <li className="option-search-item" key={index}>
+                      <li className="option-search-item" key={index} onClick={() => setPrice(item.displayName)}>
                         {item.displayName}
                       </li>
                     );
@@ -414,7 +422,7 @@ export default function HomeSearchBar() {
               className="home-searchbar-option"
               onClick={handleDisplaySquare}
             >
-              <span>Diện tích</span>
+              <span>{square}</span>
               {iconArrowSquare}
               <div
                 className="option-search-dropdown"
@@ -423,7 +431,7 @@ export default function HomeSearchBar() {
                 <ul className="option-search-list">
                   {squareItems.map((item, index) => {
                     return (
-                      <li className="option-search-item" key={index}>
+                      <li className="option-search-item" key={index} onClick={() => setSquare(item.displayName)}>
                         {item.displayName}
                       </li>
                     );
@@ -435,7 +443,7 @@ export default function HomeSearchBar() {
               className="home-searchbar-option"
               onClick={handleDisplayProject}
             >
-              <span>Dự án</span>
+              <span>{project}</span>
               {iconArrowProject}
               <div
                 className="option-search-dropdown"
@@ -444,7 +452,7 @@ export default function HomeSearchBar() {
                 <ul className="option-search-list">
                   {projectItems.map((item, index) => {
                     return (
-                      <li className="option-search-item" key={index}>
+                      <li className="option-search-item" key={index} onClick={() => setProject(item.displayName)}>
                         {item.displayName}
                       </li>
                     );
@@ -456,7 +464,7 @@ export default function HomeSearchBar() {
               className="home-searchbar-option"
               onClick={handleDisplayDirect}
             >
-              <span>Hướng</span>
+              <span>{direct}</span>
               {iconArrowDirect}
               <div
                 className="option-search-dropdown"
@@ -465,7 +473,7 @@ export default function HomeSearchBar() {
                 <ul className="option-search-list">
                   {directItems.map((item, index) => {
                     return (
-                      <li className="option-search-item" key={index}>
+                      <li className="option-search-item" key={index} onClick={() => setDirect(item.displayName)}>
                         {item.displayName}
                       </li>
                     );

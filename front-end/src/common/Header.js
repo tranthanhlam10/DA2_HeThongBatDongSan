@@ -116,12 +116,12 @@ const navbarItems = [
   },
 ];
 const avatarLoginSucessful = (
-  <a href="/userinfo" className="header-avatar-container">
+  <Link to="/userinfo" className="header-avatar-container">
     <div className="avatar">
       <img src="https://64.media.tumblr.com/ab8f387b3e4d08d3a517b1f7766ace2b/tumblr_p4bm0eQ05h1wzkv79o1_1280.jpg" />
     </div>
     <span>Lương Duy Bảo</span>
-  </a>
+  </Link>
 );
 function Header(props) {
   return (
@@ -201,7 +201,7 @@ function Header(props) {
               <div className="num-of-wishlist">{props.numberCart}</div>
             )}
           </li>
-          <li>
+          <li style={{ "display": props.isLogin ? "block" : "none" }}>
             <Link to="/post" className="navbar-createFeed post-btn">
               <span className="material-icons">add</span>
               <p>Đăng tin</p>

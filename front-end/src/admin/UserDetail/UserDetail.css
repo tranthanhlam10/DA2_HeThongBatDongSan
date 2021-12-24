@@ -36,6 +36,7 @@
 .admin-usd-detail-name {
   display: flex;
   margin-bottom: 20px;
+  align-items: center;
 }
 .admin-usd-detail-name > p {
   padding-right: 20px;
@@ -57,6 +58,7 @@
 .admin-usd-detail-email {
   display: flex;
   margin-bottom: 20px;
+  align-items: center;
 }
 .admin-usd-detail-email > p {
   padding-right: 20px;
@@ -79,6 +81,7 @@
 .admin-usd-detail-address {
   display: flex;
   margin-bottom: 20px;
+  align-items: center;
 }
 .admin-usd-detail-address > p {
   padding-right: 20px;
@@ -125,9 +128,13 @@
   border: none;
   padding: 1rem 2rem 1rem 2rem;
   margin-left: 2rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
 }
 .btn--accept-usd {
-  background-color: rgba(17, 231, 17, 0.479);
+
+
   border-radius: 10px;
 }
 .btn--accept-usd > a {
@@ -137,16 +144,17 @@
 }
 
 .btn--accept-usd:hover {
-  background-color: rgba(17, 231, 17, 0.685);
+  background-color: rgba(17, 231, 17, 0.479);
   cursor: pointer;
 }
 
 .btn--delete-usd {
-  background-color: rgba(255, 0, 0, 0.623);
+
+  background-color: rgba(255, 0, 0, 0.712);
   border-radius: 10px;
 }
 .btn--delete-usd:hover {
-  background-color: rgba(255, 0, 0, 0.712);
+  background-color: rgba(255, 0, 0, 0.623);
   cursor: pointer;
 }
 .btn--delete-usd > a {

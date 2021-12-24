@@ -1,0 +1,212 @@
+.post-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #dedede;
+}
+
+.post-detail-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-type {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 435px;
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* css cho phần thông tin chung*/
+.post-overview {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 800px;
+  height: 310px;
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+/* css cho phần thông tin chi tiết*/
+.post-detail {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 800px;
+  height: 370px;
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+/* css cho phần liên hệ chủ sở hữu*/
+.post-contact {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 800px;
+  height: 310px;
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+/* css cho phần thông tin thêm*/
+.post-image {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 800px;
+  height: 260px;
+  position: relative;
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.post-header {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+/* css cho phần thông tin bất động sản*/
+.post-re-info {
+  display: flex;
+  margin-bottom: 20px;
+}
+.post-re-info > p {
+  margin-top: 5px;
+  padding-right: 20px;
+  margin-left: 20px;
+  width: 250px;
+}
+.post-re-info > input {
+  width: 100%;
+  padding: 12px 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.post-btn-save {
+  position: absolute;
+  left: 38%;
+  top: 72%;
+  padding-right: 30px;
+  margin-top: 15px;
+  background: #f2f2f2;
+  border: 1px solid #a18474;
+  border-radius: 10px;
+  padding: 0px 8px 0px 8px;
+  height: 40px;
+  width: 150px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.post-btn-save > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.post-btn-save:hover {
+  color: #635353;
+  background: #f2f2f2;
+}
+
+/*CSS cho phần thông tin thêm*/
+.post-type-select {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+/*CSS cho phần ngày đăng tin*/
+
+.post-re-dateupload {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.post-re-dateupload > p {
+  width: 250px;
+}
+.post-re-dateupload > input {
+  width: 100%;
+  padding: 10px 15px;
+  margin-top: 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+/*CSS cho phần số ngày đăng*/
+.post-re-datetotal {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.post-re-datetotal > p {
+  width: 250px;
+}
+.post-re-datetotal > input {
+  width: 100%;
+  padding: 10px 15px;
+  margin-top: 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+/*CSS cho phần giá unit*/
+.post-re-unitprice {
+  display: flex;
+  flex-direction: column;
+}
+.post-re-unitprice > p {
+  width: 250px;
+}
+.post-re-unitprice > input {
+  width: 100%;
+  padding: 10px 15px;
+  margin-top: 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+  background-color: #dedede;
+}
+
+/*CSS cho phần giá total*/
+
+.post-re-totalprice {
+  display: flex;
+  flex-direction: column;
+}
+.post-re-totalprice > p {
+  width: 250px;
+}
+.post-re-totalprice > input {
+  width: 100%;
+  padding: 10px 15px;
+  margin-top: 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  background-color: #dedede;
+}

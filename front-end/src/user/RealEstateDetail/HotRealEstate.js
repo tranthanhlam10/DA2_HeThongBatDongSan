@@ -3,32 +3,32 @@ import './HotRealEstate.css'
 const hotRealEstateList = [
 
     {
-        displayName: "Nhà đất Thuận An",
-        link: "",
+        displayName: "Nhà đất Quận 9",
+        link: "/searchinglist",
     },
     {
-        displayName: "Nhà đất Thuận An",
-        link: "",
+        displayName: "Nhà đất Nam Định",
+        link: "/searchinglist",
     },
     {
-        displayName: "Nhà đất Thuận An",
-        link: "",
+        displayName: "Bán nhà mặt tiền 160",
+        link: "/searchinglist",
     },
     {
-        displayName: "Nhà đất Thuận An",
-        link: "",
+        displayName: "Bán nhà mặt tiền 475",
+        link: "/searchinglist",
     },
     {
-        displayName: "Nhà đất Thuận An",
-        link: "",
+        displayName: "Căn hộ New City Thủ Thiêm",
+        link: "/searchinglist",
     },
     {
-        displayName: "Nhà đất Thuận An",
-        link: "",
+        displayName: "Bán biệt thự Thảo Điền",
+        link: "/searchinglist",
     },
     {
-        displayName: "Nhà đất Thuận An",
-        link: "",
+        displayName: "Bất động sản Vũng Tàu",
+        link: "/searchinglist",
     },
 ];
 export default function HotRealEstate(props) {

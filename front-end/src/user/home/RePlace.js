@@ -50,50 +50,50 @@ export default function RePlace() {
                 <p>Bất động sản theo địa điểm</p>
             </div>
             <div className="re-place-big re-place-float">
-                <Link to="/searchinglist">
+                <a href="/searchinglist">
                     <img className="re-place-img" src={HCMImages[currentImage]} />
                     <div className="re-place-big-title">
                         <span>TP. Hồ Chí Minh</span>
                         <span className="re-place-title-num">35359 tin đăng</span>
                     </div>
-                </Link>
+                </a>
             </div>
             <ul className="re-place-small-container">
                 <li className=" re-place-small re-place-float re-place-mb">
-                    <Link to="/searchinglist">
+                    <a href="/searchinglist">
                         <img className="re-place-img" src={DongNaiImages[currentImage]} />
                         <div className="re-place-small-title">
                             <span>Đồng Nai</span>
                             <span className="re-place-small-title-num">2000 tin đăng</span>
                         </div>
-                    </Link>
+                    </a>
                 </li>
                 <li className="re-place-small re-place-float re-place-mb">
-                    <Link to="/searchinglist">
+                    <a href="/searchinglist">
                         <img className="re-place-img" src={DaLatImages[currentImage]} />
                         <div className="re-place-small-title">
                             <span>Đà Lạt</span>
                             <span className="re-place-small-title-num">1000 tin đăng</span>
                         </div>
-                    </Link>
+                    </a>
                 </li>
                 <li className="re-place-small re-place-float">
-                    <Link to="/searchinglist">
+                    <a href="/searchinglist">
                         <img className="re-place-img" src={DaNangImages[currentImage]} />
                         <div className="re-place-small-title">
                             <span>Đà Nẵng</span>
                             <span className="re-place-small-title-num">1520 tin đăng</span>
                         </div>
-                    </Link>
+                    </a>
                 </li>
                 <li className="re-place-small re-place-float">
-                    <Link to="/searchinglist">
+                    <a href="/searchinglist">
                         <img className="re-place-img" src={HaNoiImages[currentImage]} />
                         <div className="re-place-small-title">
                             <span>Hà Nội</span>
                             <span className="re-place-small-title-num">2500 tin đăng</span>
                         </div>
-                    </Link>
+                    </a>
                 </li>
             </ul>
         </div>
